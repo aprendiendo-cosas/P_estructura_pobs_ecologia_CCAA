@@ -4,7 +4,7 @@
 > + **_Versión_**: 2024-2025
 > + **_Asignatura (grado)_**: Ecología (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Dos sesiones de 1.5 horas en clase.
+> + **_Duración_**: Tres sesiones de 1.5 horas cada una. Algunas horas más en casa. 
 
 ![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2023_2024/imagenes/portada.jpg)
 
@@ -14,11 +14,17 @@
 ## Objetivos 
 
 
+
+
+
+
+
 ## Contextualización ecológica del problema
+
 - En esta práctica aprenderemos a caracterizar la estructura de un ecosistema. Concretamente usaremos un descriptor que estudiamos en los primeros días de clase: diagramas rango-edad o pirámides poblacionales. Son esquemas que nos dan idea de cuándos individuos de qué tamaño o edad hay en una población determinada. 
 - Pero esto sirve para poblaciones, no para ecosistemas. O al menos no sabemos si sirve porque no hemos estudiado aún los ecosistemas. Así que, asumiremos algo importante: la estructura de un sistema complejo (un ecosistema) se parece mucho a la estructura de los elementos que lo constituyen (una serie de poblaciones de seres vivos en nuestro caso). Así que, estudiaremos la estructura de un ecosistema a partir de la estructura de las poblaciones que lo forman. Pero pondremos el foco en aquellas poblaciones que son más relevantes para la estructura. Por ejemplo, en un bosque nos referimos a las poblaciones de los árboles que dominan (y dan nombre) al bosque. 
 - Es decir, trataremos de generar una gráfica que muestre la distribución de edades (o tamaños) de las especies dominantes de cada tipo de ecosistema. 
-- Para eso conviene entender un poco cómo se distribuyen los ecosistemas en Sierra Nevada. Mostramos mapa de distirbución y mapa de gradiente altitudinal.
+- Para eso conviene entender un poco cómo se distribuyen los ecosistemas en Sierra Nevada. Mostramos mapa de distirbución y mapa de gradiente altitudinal. PONER AQUÍ LA IMAGEN DE LA PIZARRA
 
 
 ## Metodología propuesta
@@ -29,12 +35,16 @@
   - Mejora en la retención del conocimiento.
   - Aprendizaje colaborativo
 
+- Además, de nuevo, nos apoyaremos en las herramientas IA para ir generando conocimiento nuevo. Actuaremos como lo haría yo (el profesor) si estuviera en el lugar de los estudiantes.
 - En el proceso aprenderemos varios conceptos importantes:
   - Flujo de trabajo: secuencia de acciones ordenadas que nos permiten conseguir un objetivo concreto. introducción a draw.io (diagrams)
   - Base de datos relacional.
   - Fuentes de datos para caracterizar los ecosistemas.
 
+
+
 ## Planteamiento de un flujo de trabajo para abordar el problema
+
 ¿qué tipo de gráfica es esta matemáticamente hablando? 
 
 - ¿cómo obtenemos estos datos?
