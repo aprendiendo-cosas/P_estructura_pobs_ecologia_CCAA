@@ -71,6 +71,13 @@ En los siguientes enlaces tienes información sobre flujos de trabajo. Recomenda
 + [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
 + [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
 
+Antes de empezar el ejercicio de preguntar a ChatGPT los estudiantes elaboraron una primera propuesta de flujo de trabajo. A pesar de su desconocimiento sobre los datos a utilizar, todos los grupos identificaron los pasos clave para crear un flujo de trabajo:
+
+- Identificación de fuentes de datos relevantes.
+- Procesamiento de la información generada en campo.
+- Aplicación de algoritmos para generar el histograma.
+- Discusión de los resultados mostrados en la gráfica.
+
 
 
 
