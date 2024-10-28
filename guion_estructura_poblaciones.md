@@ -57,7 +57,7 @@ Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 - Mejora en la transferibilidad a situaciones reales. Si aprendemos bien el método que propongo aquí, os resultará más fácil transferirlo a otras situaciones (por ejemplo, a vuestro TFG, para el que no falta tanto tiempo...).
 - Mejora en la retención del conocimiento. Dicen que Confucio dijo algo así: *Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí*. Así que, según parece, nuestro cerebro retiene más eficazmente la información si pone en práctica el nuevo conocimiento adquirido. 
 
-Para conseguir lo anterior nos apoyaremos en ChatGPT. Trataremos de establecer una conversación con esta IA. A partir de sus respuestas iremos elaborando un flujo de trabajo que nos permitirá crear nuestro histograma. Además, yo explicaré algunas cuestiones concretas que vayan saliendo de la repuesta de la IA. Se trata, en definitiva, de ir usando esta herramienta como una especie de profesor que va dándonos hilos de los que tirar. En [este](https://chatgpt.com/share/67177e0b-8d98-8009-ae7f-b83ea2a20f27) enlace se puede encontrar la conversación que mantenemos con ChatGPT. Se irá actualizando de forma automática. En las siguientes secciones comentamos con cierto detalle los aspectos que vamos viendo relevantes en la respuesta de ChatGPT.
+Para conseguir lo anterior nos apoyaremos en ChatGPT. Trataremos de establecer una conversación con esta IA. A partir de sus respuestas iremos elaborando un flujo de trabajo que nos permitirá crear nuestro histograma. Además, yo explicaré algunas cuestiones concretas que vayan saliendo de la repuesta de la IA. Se trata, en definitiva, de ir usando esta herramienta como una especie de profesor que va dándonos hilos de los que tirar. En [este](https://chatgpt.com/share/671f7083-8938-8009-9104-6a49fc3ef5eb) enlace se puede encontrar la conversación que mantenemos con ChatGPT. Se irá actualizando de forma automática. En las siguientes secciones comentamos con cierto detalle los aspectos que vamos viendo relevantes en la respuesta de ChatGPT.
 
 
 
@@ -96,9 +96,108 @@ A continuación se muestran algunos de esos flujos de trabajo creados por los es
 
 
 
+## Resumen de aprendizajes que adquirimos en la conversación con ChatGPT
+
+Como hemos dicho más arriba, en esta práctica aplicamos la técnica de la ingeniería inversa para "aprender a aprender". El elemento clave de este proceso será una conversación con ChatGPT. De ahí iremos sacando ideas interesantes (o hilos de los que tirar) cuya aplicación nos permitirá aprender a enfrentarnos a situaciones novedosas y complejas como la que nos ocupa ahora. 
+
+Lo primero que preguntamos a ChatGPT en [esta](https://chatgpt.com/share/671f7083-8938-8009-9104-6a49fc3ef5eb) conversación es lo siguiente:
+
+> Soy un estudiante de segundo de ciencias ambientales en una asignatura llamada ecología. Necesito generar un histograma que muestre la distribución de edades o tamaños en poblaciones de encinas en un territorio concreto (Sierra Nevada, España). Nunca he hecho esto antes y no sé cómo hacerlo. El profesor me pide que elabore un flujo de trabajo para obtener el resultado anterior. ¿puedes ayudarme proponiendo ese flujo de trabajo?
+>
+> En el flujo de trabajo muestra las posibles fuentes de datos (Reales) que podría utilizar, así como los procedimientos de agregación necesarios para hacer la gráfica.
 
 
-AQUÍ IREMOS PONIENDO LOS CONCEPTOS QUE RESULTEN INTERESANTES EN NUESTRA CONVERSACIÓN CON CHATGPT
+
+En su respuesta, la IA nos propone varios pasos en el flujo de trabajo. Usamos dichos pasos o fases para nombrar las siguientes secciones. En ellas iré poniendo las ideas principales que vayan surgiendo en la conversación con la IA. Todos los apartados siguientes se estructuran de la misma forma:
+
++ *Contextualización*.  Un par de frases explicitando cómo ChatGPT nos ha traído a este apartado.
++ *Pregunta* que formulamos con relación a cada apartado.
++ *Respuesta*. Extracto de las respuesta más relevantes combinadas con otras búsquedas específicas que hacemos en internet. Este apartado y el anterior se repetirán tantas veces como preguntemos a ChatGPT en cada apartado.
++ *Aprendizajes*. Resumen de los principales aprendizajes que obtenemos.
+
+
+
+### Recopilación de datos
+
+*Contextualización*
+
+La recopilación de información es, posiblemente, lo más complejo de abordar en un problema como el que nos planteamos. Los datos suelen estar mal documentados y no siempre están disponibles en internet. Por eso resulta difícil acceder a ellos si no tienes mucha experiencia. Creo que esta parte del flujo de trabajo es la única que no podríais completar por vuestra cuenta. 
+
+Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de datos. A priori, la que parece más detallada es el llamado Inventario Forestal Nacional. Así que, trabajaremos unos minutos con esta fuente de datos y conversaremos con ChatGPT...
+
+*Pregunta*
+
+
+
+*Respuesta*
+
+
+
+
+
+*Aprendizajes*
+
+
+
+### Procesamiento de datos
+
+*Contextualización*
+
+
+
+*Pregunta*
+
+
+
+*Respuesta*
+
+
+
+*Aprendizajes*
+
+
+
+
+
+### Visualización de datos (creación del histograma)
+
+*Contextualización*
+
+
+
+*Pregunta*
+
+
+
+*Respuesta*
+
+
+
+*Aprendizajes*
+
+
+
+
+
+### Interpretación de los resultados
+
+*Contextualización*
+
+
+
+*Pregunta*
+
+
+
+*Respuesta*
+
+
+
+*Aprendizajes*
+
+
+
+
 
 
 
