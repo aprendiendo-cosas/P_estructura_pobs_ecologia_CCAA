@@ -86,10 +86,45 @@ A continuación se muestran algunos de esos flujos de trabajo creados por los es
 
 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/ejemplo_flujograma.png)
+![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/ejemplo_flujograma.png)
 
 
 <iframe frameborder="0" style="width:100%;height:289px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20ecologia%201.drawio#R%3Cmxfile%3E%3Cdiagram%20id%3D%22C5RBs43oDa-KdzZeNtuy%22%20name%3D%22Page-1%22%3E7VptV%2BI6EP41nKMf8PSF14%2BloLIXQQWvd%2FdbaEPJGhq2DQj76%2B%2BkSSl9WV5U1N17PUdpJtNJMs%2FkmUmwZNqz1VWA5tMb5mJaMjR3VTLbJcPQK2YFPoRkLSWNqhJ4AXGVUiIYkp9YCTUlXRAXhylFzhjlZJ4WOsz3scNTMhQE7DmtNmE0PeoceTgnGDqI5qWPxOVTtQqjnsivMfGm8ch6rSl7ZihWVisJp8hlz1sis1My7YAxLp9mKxtT4bzYL4%2Fd9SPtPdWuvtyFP9BD669R%2F%2B%2ByNHZ5zCubJQTY529r2pCml4gulL%2FUWvk6dmDAFr6LhRGtZLamfEbhUYfH75jztQIcLTgDEQv4lHnMR7TH2FzpTZjPlZou2th3LQEstMeUOU9SdEkoVWNAS%2Bk3oBXygD1tsBMGNkAIZYrGmLaQ8%2BRFE7UZZQF0%2BczHwpQLwaDWkkyuk0hbB%2FpWYRCyReDgHXqmCnEUeHiXvZrUE%2FPbilOF3BVmM8yDNSgEmCJOlulgRmpPeBs99Sr4Fa23FOaM%2BDzcsnwrBKCgtvdml6rNrZuZGDpOHx7kDOLW1lISURSXR8SomYvRW2s46n6zep0hyNsd%2BGP1RhZ83Az68GmbpaZu7QhkEUTPU8LxcI4iNJ%2BB%2B9LBvR204L2WR1EYqpDbE5HHRdQSBxyvdsZA3FtNO7%2Bhms8JrekxV023KK2i%2FTpqtpA7HpjqfvLYv%2F9%2Ba3p5Y%2FKoHUge9QPJQwVOWbswUpFjKuSOI5eEDWIVNpmEMNGtODqWgMwMoUCQ7ySgPfqnIaBaLs7vO%2Fbgttuz7kHc7V8O7m8suxvxjtnP886UzcaLcD%2FnpAJPhPUlmhEqVnqN6RJz4qACZkKUeD40HIhBHBRHNAxJfA9ataQ1inZQufKOjKXXD6Ss5qkoq56DsjO87dhdkUNu7zvtwU23b%2FVHnT8ueZhGBopm9f2yh9Zr9qxvd5OGdce65evvd%2BhxtVnCruyRULkjXEictJ%2FTueM41%2B0lzy3HVAv8EsteyqEKl0olS2gZf8ukod7awYyVZgbgWsaQzCo5Qy8gyUI4DzhJ%2FA%2Fny%2BE03hnOfNF9aT30oaiuUfBYyyVLePR4hJMUCdJL4V37sWBxRzmM6FDU6LoxX8nXVH9s6Cy2BAnKL7Q03tRhZUcWYsJg4I3PjCrQGaxU2344j4xrGdWK7Adijj4rmlKLpjlRGVcow7hoJphdjX7FmAcTMrQh8sNspzRmBQRR%2BRiCUjnEAZlI88DTvKxytbBO8YQXumGvP%2FOvfEFjGBbKD6uNQzn8TwY7TT1HPbq3ILDppIQS3xGaciQIEDlYegIglkikxUeiQ3zChVOK5n2%2BZ6hfTywVf69J1afKtzk6NvKlT7OAh7Lb%2FM3SbSW%2FoXuD%2B6INfbYkjGKOosnDTGZozqLI0VwR%2FSHBUGLDg4%2BXyEXnvzMqm%2Brmo1A55Ah9wqy5fdIsnN%2Bh11Tvk13NevOi2kgjGJ9lj02wBbZMLWPrxDk2f660B%2F121%2B4O%2BtHNlt3r3gjubuijrm0NVYrpjbqjh7ZsdEb259xopg7erTeTnzRo9QMPHyfbd%2Flz4H%2BxWq02MknKTPbEsfupZmZsZQ%2BOJ95MjU%2FOpM1PjbxRfwXy2TNPga0Tg9%2FMgT%2ByWj1Rfn6F36t7yaKXwKL5oKCUzEP8cVSZ3ThGtXJRb2rJj5HjynphYFxUjBOxZXyI%2FSP8q%2Bv55FPs0Nd70%2FRvwrslbY16leDbYuxrVx1UcPF1ZrMZLBwFUbk9jmptL5DHtglxUHiec6s4Tqb9l7sHFi6Cl6mlOmbEdeVXLhhO42gcmRJMpy7pwW61Vaq2ha0FZ6G6wNzcWWa%2B%2B5gQSl%2F1dcjhEFbjemFzednI1w9FGJqnwjB%2F22UDfo5wfHQMD4Xn1WGbsznzAjSRPUgKXTzLCzF3ckB%2F0K7JXt1DbXwRp5n3qNoKvf7mpyVwWrD%2BRzQuqnHz63Zfe5VqrV9dG%2ByKpk9SG2S%2F5M%2FheWhhsHnxV5ehL64KoJn8341UT%2F57yez8Cw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
+
+
+![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/ejemplo_flujograma_2.png)
+
+
+
+
+
+AQUÍ IRÉ PONIENDO LOS CONCEPTOS QUE RESULTEN INTERESANTES EN NUESTRA CONVERSACIÓN CON CHATGPT
+
+
+
+## Cronología de la práctica
+
+La metodología de ingeniería inversa que hemos usado ha hecho que sea difícil planificar a priori la temporalidad de los conceptos estudiados. Por eso en esta sección se describe cómo discurrió la práctica y cuánto tiempo duró cada sección.
+
+
++ Primera sesión:
+  + Planteamiento de objetivos.
+  + Contextualización ecológica.
+  + Breve introducción al concepto de tabla.
+  + Breve introducción al concepto de flujo de trabajo.
+  + Los estudiantes generan una primera versión de un flujo de trabajo.
++ Segunda sesión:
+  + Trabajo para mejorar la comunicación entre profesor y estudiantes. Esto está un poco al margen del objetivo concreto de esta práctica, pero fue relevante y necesario hacerlo en este momento.
+  + Iniciamos la conversación con ChagGPT para construir nuestro histograma.
++ Tercera sesión:
+
++ ¿Cuarta sesión?
+
+
+
+
+
+
 
 
 
