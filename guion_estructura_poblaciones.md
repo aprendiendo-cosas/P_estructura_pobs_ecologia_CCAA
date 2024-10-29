@@ -127,11 +127,21 @@ Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de dato
 
 *Pregunta*
 
-
+¿qué datos se toman en el IFN?
 
 *Respuesta*
 
 
+
+*Pregunta*
+
+¿Sirve el IFN para sistemas no forestales
+
+
+
+*Respuesta*
+
++ No, pero ofrece alternativas...
 
 
 
@@ -147,11 +157,13 @@ Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de dato
 
 *Pregunta*
 
-
+Herramientas para manejar datos
 
 *Respuesta*
 
-
++ bbdd
++ programación
++ Sig
 
 *Aprendizajes*
 
