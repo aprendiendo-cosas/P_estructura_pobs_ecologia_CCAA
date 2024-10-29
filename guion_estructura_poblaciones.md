@@ -119,62 +119,93 @@ En su respuesta, la IA nos propone varios pasos en el flujo de trabajo. Usamos d
 
 ### Recopilación de datos
 
-*Contextualización*
++ *Contextualización*
 
 La recopilación de información es, posiblemente, lo más complejo de abordar en un problema como el que nos planteamos. Los datos suelen estar mal documentados y no siempre están disponibles en internet. Por eso resulta difícil acceder a ellos si no tienes mucha experiencia. Creo que esta parte del flujo de trabajo es la única que no podríais completar por vuestra cuenta. 
 
 Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de datos. A priori, la que parece más detallada es el llamado Inventario Forestal Nacional. Así que, trabajaremos unos minutos con esta fuente de datos y conversaremos con ChatGPT.
 
-*Pregunta*
++ *Pregunta*
 
-Ante la pregunta de ¿Cuál es la fuente de la que has sacado la información
+¿Cuál es la fuente de la que has sacado la información sobre el inventario forestal nacional (IFN)? ¿Cómo se accede a esa información?
 
-*Respuesta*
++ *Respuesta*
 
+Esta es la típica pregunta que ChatGPT no sabe contestar bien. Da respuestas ambiguas que no nos ayudan mucho. Esto se debe a que la información del IFN no está bien descrita en la web del ministerio. Está en formatos a los que ChatGPT no puede acceder. 
 
++ *Pregunta*
 
-*Pregunta*
+Cambiamos la estrategia y preguntamos por la estructura de dicho formato y por las variables que se miden en él.
 
-¿Sirve el IFN para sistemas no forestales
+* *Respuesta*
 
+Ahora sí que obtenemos una respuesta completa y útil. ChatGPT detalla una serie de variables de interés para caracterizar la estructura de distintos ecosistemas forestales. Esto nos da una idea bastante buena de las variables que podríamos usar para generar la tabla a partir de la cual obtener el histograma que buscamos. 
 
++ *Pregunta*
 
-*Respuesta*
+Cambiamos un poco de tema y preguntamos a ChatGPT sobre la utilidad del IFN para ecosistemas no forestales.
 
-+ Es importante hacer preguntas concretas a las IAs.
-+ Estas herramientas no son buenas (por ahora) para buscar contenidos en la web. Por eso, cuando preguntamos por una fuente de información, suelen dar respuestas genéricas poco útiles.
-+ Es importante identificar las respuestas que son poco elaboradas. Cuando una IA incorpora palabras como "posiblemente" o dice que no tiene información sobre algo, normalmente el resto de su respuesta es como "marcarse un triple". Es decir, está probando suerte para ver si su respuesta nos resulta atractiva. 
-+ No, pero ofrece alternativas...
+¿Sirve el IFN para sistemas no forestales? Concretamente preguntamos por la utilidad de esta fuente de datos en ecosistemas como los pastizales alpinos o los enebrales dominados por *Juniperus*. 
 
++ *Respuesta*
 
+La respuesta nos indica claramente que los inventarios forestales no son útiles para ecosistemas no forestales (obviamente). Además, y esto es muy interesante, ChatGPT aporta información valiosa sobre otros métodos que sí podrían ser útiles para caracterizar ecosistemas no forestales: transectos, muestreos por puntos, etc. También aporta información relevante sobre las variables que podrían medirse para caracterizar estos tipos de ecosistemas.
+
+Teniendo en cuenta esta respuesta, tengo que confesar que los datos que usaremos para ecosistemas no forestales son datos falsos creados a partir de bibliografía y de trabajos científicos. Cuando construyamos el histograma con ellos obtendremos resultados parecidos a los que obtendríamos con datos reales. 
+
+* *Pregunta*
+
+Volvemos a preguntar sobre el IFN. En este caso preguntamos a ChatGPT sobre el procedimiento que podríamos seguir para obtener la tabla de conteos de individuos que necesitamos para elaborar un histograma a partir de los datos del IFN.
+
++ *Respuesta*
+
+La respuesta que da ChatGPT en este caso es un buen ejemplo de respuesta ambigua poco útil. La IA muestra una serie de pasos generales que se pueden aplicar a casi cualquier conjunto de datos. Este tipo de respuestas nos deben hacer pensar que la IA no dispone de información real sobre la estructura de la información que necesitamos. Para reconfirmar esta sospecha volvemos a preguntar específicamente si ChatGPT tiene acceso a la estructura de la base de datos del IFN. La IA confiesa que no tiene acceso a esa información. Pero sí nos devuelve una lista de tablas que podrían formar parte del IFN. También describe los campos principales de dichas tablas. 
+
++ *Pregunta*
+
+Esta pregunta no es obvia para los estudiantes. Las demás tampoco las han formulado ellos en realidad, pero podrían haberlo hecho. Esta, por el contrario, requiere conocer bien cómo se organizan los datos en una base de datos relacional. Le preguntamos a la IA sobre las herramientas que se usan para gestionar estos datos.
+
++ *Respuesta*
+
+La respuesta de ChatGPT es clara: debemos usar SIG, lenguajes de programación (R y o Python) y bases de datos relacionales. 
 
 *Aprendizajes*
 
-
++ Los inventarios forestales son herramientas muy valiosas para caracterizar la estructura de los bosques. [Este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/Capitulo_16.pdf) capítulo de libro describe muy bien su estructura y utilidades. 
++ Es importante hacer preguntas concretas a las IAs.
++ Estas herramientas no son buenas (por ahora) para buscar contenidos en la web. Por eso, cuando preguntamos por una fuente de información, suelen dar respuestas genéricas poco útiles.
++ Es importante identificar las respuestas que son poco elaboradas. Cuando una IA incorpora palabras como "posiblemente" o dice que no tiene información sobre algo, normalmente el resto de su respuesta es como "marcarse un triple". Es decir, está probando suerte para ver si su respuesta nos resulta atractiva. 
++ Las bases de datos relacionales son herramientas fundamentales para almacenar información de todo tipo. Una base de datos consta de tablas (que, como recordamos son objetos digitales que nos permiten caracterizar elementos del mismo tipo) que se relacionan entre sí a través de un campo común. La tabla que describe ChatGPT de parcelas, por ejemplo, se relaciona con la de árboles a través del código de la parcela en la que está cada árbol. 
 
 ### Procesamiento de datos
 
 *Contextualización*
 
+Después de la charla anterior con ChatGPT concluimos que usaremos los datos del IFN, pero no tenemos tiempo ni conocimientos suficientes para procesar los datos en bruto (almacenados en varias tablas diferentes) y generar una tabla sencilla que contenga los datos que necesitamos para el inventario. Esta tabla deberá de tener tantas filas como árboles (hierba o arbustos) hayan sido medidos. Y también tendrá un campo que mostrará la especie del árbol en cuestión. Deberá de tener una estructura parecido a esto:
+
+| Especie      | Tamanio |
+| ------------ | ------- |
+| Quercus ilex | 2,3     |
+| Quercus ilex | 5,34    |
+| Quercus ilex | 1,3     |
+
+Yo he preparado las tablas necesarias para generar histogramas en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
+
++ [arboles_encinar_pinar.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/arboles_encinar_pinar.zip). Este archivo contiene los datos altura (en metros) de miles de árboles medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación y para los encinares. La tabla contiene los siguientes campos:
+  + Ecosistema: indica el ecosistema en el que se encuentra la parcela en la que se tomaron los datos en cuestión. Este campo nos permitirá filtrar por tipo de ecosistema para así usar solo los datos que correspondan al ecosistema que queramos.
+  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo.
+  + Altura: se muestra la altura en metros del árbol medido.
++ [Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
+  + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
+  + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
++ [Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
+  + Especie: en este caso todos los registros tienen el valor de *Populus*.
+  + Altura_m: indica la altura en metros de cada árbol.
++ [Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
 
 
-*Pregunta*
 
-Herramientas para manejar datos
-
-*Respuesta*
-
-+ bbdd
-+ programación
-+ Sig
-
-*Aprendizajes*
-
-
-
-
-
-### Visualización de datos (creación del histograma)
+### Creación del histograma y visualización de resultados
 
 *Contextualización*
 
@@ -232,7 +263,16 @@ La metodología de ingeniería inversa que hemos usado ha hecho que sea difícil
   + Iniciamos la conversación con ChagGPT para construir nuestro histograma.
 + Tercera sesión:
 
-+ ¿Cuarta sesión?
+  + Enlazamos una serie de preguntas a ChatGPT sobre la estructura de datos del IFN.
+
+  + Hablamos un poco de bases de datos relacionales.
+
+  + Los estudiantes descargan las tablas de datos que usaremos para generar los histogramas.
+
++ Cuarta sesión
+
+  + Obtenemos al fin los dichosos histogramas!!!
+
 
 
 
