@@ -4,7 +4,7 @@
 > + **_Versión_**: 2024-2025
 > + **_Asignatura (grado)_**: Ecología (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Tres o cuatro sesiones de 1.5 horas cada una. Algunas horas más en casa. 
+> + **_Duración_**: Cuatro sesiones de 1.5 horas cada una. Algunas horas más en casa. 
 
 ![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/portada.png)
 
@@ -123,11 +123,11 @@ En su respuesta, la IA nos propone varios pasos en el flujo de trabajo. Usamos d
 
 La recopilación de información es, posiblemente, lo más complejo de abordar en un problema como el que nos planteamos. Los datos suelen estar mal documentados y no siempre están disponibles en internet. Por eso resulta difícil acceder a ellos si no tienes mucha experiencia. Creo que esta parte del flujo de trabajo es la única que no podríais completar por vuestra cuenta. 
 
-Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de datos. A priori, la que parece más detallada es el llamado Inventario Forestal Nacional. Así que, trabajaremos unos minutos con esta fuente de datos y conversaremos con ChatGPT...
+Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de datos. A priori, la que parece más detallada es el llamado Inventario Forestal Nacional. Así que, trabajaremos unos minutos con esta fuente de datos y conversaremos con ChatGPT.
 
 *Pregunta*
 
-¿qué datos se toman en el IFN?
+Ante la pregunta de ¿Cuál es la fuente de la que has sacado la información
 
 *Respuesta*
 
@@ -141,6 +141,9 @@ Teniendo en cuenta lo anterior, ChatGPT menciona cuatro posibles fuentes de dato
 
 *Respuesta*
 
++ Es importante hacer preguntas concretas a las IAs.
++ Estas herramientas no son buenas (por ahora) para buscar contenidos en la web. Por eso, cuando preguntamos por una fuente de información, suelen dar respuestas genéricas poco útiles.
++ Es importante identificar las respuestas que son poco elaboradas. Cuando una IA incorpora palabras como "posiblemente" o dice que no tiene información sobre algo, normalmente el resto de su respuesta es como "marcarse un triple". Es decir, está probando suerte para ver si su respuesta nos resulta atractiva. 
 + No, pero ofrece alternativas...
 
 
@@ -252,4 +255,3 @@ Haz click [aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologi
  <p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> 
 
 <p>Esta licencia no aplica a enlaces a artículos, libros o imágenes no originales. Estos productos tienen su licencia correspondiente.</p>
-
