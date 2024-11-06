@@ -217,11 +217,13 @@ Como en casi todos los lenguajes de programación, en R se suele trabajar usando
 
 + Los alumnos que trabajen en los ordenadores de la UCO tendrán que usar directamente R en modo consola. Para trabajar con el script que crearemos usarán la aplicación Notepad+ que mostrará las líneas de código que vamos a ir obteniendo de ChatGPT. A la derecha (en Notepad+) iremos creando el programa y a la izquierda iremos copiando y pegando las líneas para ir ejecutándolo paso a paso.  Su pantalla deberá de tener un aspecto parecido a esto:
 
+![R_UCO](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/entorno_UCO.png)
 
 
 
+- Los estudiantes que usen su ordenador podrán trabajar con RStudio, que tiene una interfaz como se muestra en la imagen posterior. En el cuadrante superior izquierdo iremos creando el programa que se irá ejecutando línea a línea en el terminal que hay en el cuadrante inferior izquierdo. Conforme vayamos creando datos y tablas, se mostrarán en el cuadrante de arriba a la derecha. Abajo a la derecha se mostrará finalmente el histograma. Para instalar R y RStudio hay que seguir las instrucciones que se indican en [esta](https://posit.co/download/rstudio-desktop/) página. Primero hay que instalar R (opción 1: install R) y luego RStudio (2: Install RSstudio)
 
-
+![RStudio](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/entorno_RStudio.png)
 
 
 
