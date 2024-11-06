@@ -209,6 +209,20 @@ Yo he preparado las tablas necesarias para generar histogramas en todos los ecos
 
 *Contextualización*
 
+En esta fase final de la práctica (al fin), vamos a preguntar a ChatGPT cómo se construye un histograma usando R. Pero antes de eso, os cuento por aquí algunas cosas generales de este lenguaje de programación.
+
+R es uno de los lenguajes de programación más usados en el ámbito científico. Tiene funciones para realizar análisis estadísticos, dibujar distintos tipos de gráficas, procesar información georreferenciada y muchas otras cosas más. Como cualquier lenguaje de programación, R se parece mucho a un idioma. Tiene sus normas (sintaxis), sus tipos de "palabras" (funciones, parámetros, etc.) y también tiene una forma particular de almacenar tipos de datos. En esta sección nos familiarizaremos un poco con algunos elementos de R. Iremos aprendiendo poco a poco usando algunas de sus funciones.
+
+Como en casi todos los lenguajes de programación, en R se suele trabajar usando la consola. Es esa pantalla negra que se usa frecuentemente en las películas de hackers en la que se escriben órdenes para que el ordenador trabaje. Este entorno de trabajo es un poco árido, por lo que se han desarrollado otros entornos que facilitan el trabajo porque aportan ventanas para visualizar los datos creados o importados, para ver los gráficos o para desplegar un programa (script) completo e ir ejecutándolo paso a paso (o a la vez). En nuestro caso usaremos una aplicación llamada RStudio. Es un entorno de desarrollo muy utilizado en R. Pero tenemos un problema: RStudio no está instalado en los ordenadores de la UCO. Por eso usaremos dos entornos de trabajo:
+
++ Los alumnos que trabajen en los ordenadores de la UCO tendrán que usar directamente R en modo consola. Para trabajar con el script que crearemos usarán la aplicación Notepad+ que mostrará las líneas de código que vamos a ir obteniendo de ChatGPT. A la derecha (en Notepad+) iremos creando el programa y a la izquierda iremos copiando y pegando las líneas para ir ejecutándolo paso a paso.  Su pantalla deberá de tener un aspecto parecido a esto:
+
+
+
+
+
+
+
 
 
 *Pregunta*
