@@ -10,7 +10,6 @@
 
 
 
-
 ## Objetivos 
 
 Como todas las actividades de la asignatura, esta práctica tiene dos tipos de objetivos:
@@ -237,15 +236,15 @@ Ya estamos dispuestos a preguntar a ChatGPT cómo se generaría un histograma us
 
 *Respuesta*
 
-ChatGPT nos devuelve un código completo en el que empieza a hablar del concepto de paquete. Un paquete es un conjunto de funciones que no están en el "core" de R y que se instalan a posteriori para cumplir tareas específicas. Por ejemplo, en nuestro caso usaremos un paquete llamado *ggplot2* . Este paquete sirve para generar gráficas de tipos muy diferentes.
+ChatGPT nos devuelve un código completo en el que empieza a hablar del concepto de paquete. Un paquete es un conjunto de funciones que no están en el "core" de R y que se instalan a posteriori para cumplir tareas específicas. Por ejemplo, en nuestro caso usaremos un paquete llamado `ggplot2` . Este paquete sirve para generar gráficas de tipos muy diferentes.
 
-Los paquetes han de ser instalados por primera vez. Para ello se usa la función *install.packages*, cuya sintaxis obliga a poner a continuación el nombre del paquete entre comillas y paréntesis. La línea de código que instala este paquete sería:
+Los paquetes han de ser instalados por primera vez. Para ello se usa la función `install.packages`, cuya sintaxis obliga a poner a continuación el nombre del paquete entre comillas y paréntesis. La línea de código que instala este paquete sería:
 
 ```{R}
 install.packages("ggplot2")
 ```
 
-ChatGPT también nos sugiere usar otro paquete (*dplyr*), pero en realidad no nos hace falta, así que no lo usaremos.
+ChatGPT también nos sugiere usar otro paquete (`dplyr`), pero en realidad no nos hace falta, así que no lo usaremos.
 
 Después de instalar los paquetes es necesario cargarlos en memoria. Esta segunda operación se debe de hacer siempre que se use el paquete en cada sesión. Es decir, tienes que ejecutar esta línea de código cada vez que abras R para generar histogramas. Sin embargo, la instalación se realiza solo una vez. La función que se usa para cargar paquetes se llama *library*. Su sintaxis se muestra a continuación.
 
@@ -267,7 +266,7 @@ A continuación se muestra la sintaxis del comando que permite establecer el dir
 setwd("/tu/ruta")
 ```
 
-Sustituye lo que hay entre comillas por tu ruta. Para acceder a la ruta, usa tu explorador de archivos, ponte sobre la barra de navegación, botón derecho y copiar ruta en modo texto. Ten en cuenta que en windows, cuando copies la ruta de la carpeta, pondrá las barras hacia la izquierda. Tienes que cambiarlas a mano y ponerlas hacia la derecha.  
+Sustituye lo que hay entre comillas por tu ruta. Para acceder a la ruta, usa tu explorador de archivos, ponte sobre la barra de navegación, botón derecho y copiar ruta en modo texto. Ten en cuenta que en windows, cuando copies la ruta de la carpeta, pondrá las barras hacia la izquierda. Tienes que cambiarlas a mano y ponerlas hacia la derecha. 
 
 
 
@@ -277,7 +276,7 @@ Una vez resuelto el asunto del directorio de trabajo, retomamos el hilo que mues
 
 *Respuesta*
 
-Ahora, usamos `ggplot2` para crear el histograma. Podemos ajustar el tamaño de las barras (bins) según necesites para una mejor visualización:
+Ahora, usamos `ggplot2` para crear el histograma. Podemos ajustar el tamaño de las barras (bins) según necesites para una mejor visualización. Observa que, en el código de abajo, el tamaño de las barras es de 1 m. Tendrás que cambiar esto en el caso de que las especies medidas sean mucho más pequeñas o mucho más grandes:
 
 ```R
 ggplot(datos, aes(x = Altura)) +
@@ -293,9 +292,7 @@ En este código:
 - `fill` y `color`: Colorean las barras y sus bordes.
 - `ggtitle()`, `xlab()`, y `ylab()`: Añaden título y etiquetas a los ejes.
 
-### Paso 5: Visualizar y Guardar el Histograma
-
-Simplemente ejecuta el código en R para ver el histograma. Si deseas guardar el gráfico en un archivo, puedes usar `ggsave()`:
+Simplemente ejecuta el código en R para ver el histograma. Si no estás usando RStudio y quieres guardar el gráfico en un archivo, puedes usar `ggsave()`:
 
 ```R
 ggsave("histograma_alturas.png", plot = última_plot(), width = 10, height = 8, dpi = 300)
@@ -303,21 +300,12 @@ ggsave("histograma_alturas.png", plot = última_plot(), width = 10, height = 8, 
 
 Este código guarda el último gráfico realizado en un archivo PNG con una resolución de 300 dpi.
 
-### Consideraciones Adicionales
-
-- **Revisar los datos**: Siempre es buena idea hacer una exploración preliminar de los datos para entender mejor su distribución y posibles valores atípicos.
-- **Ajustes adicionales**: Puedes modificar la apariencia del gráfico ajustando colores, tamaños de texto, etc., según tus preferencias o necesidades de presentación.
-
-Este flujo te permitirá generar y personalizar histogramas en R para visualizar la distribución de la altura de especies en tus estudios.
-
-
-
-
-
+Si estás usando RStudio, puedes exportar la gráfica directamente dándole al botón exportar de dicho programa. 
 
 
 *Aprendizajes*
-
++ Hemos aprendido algunas normas del lenguaje R: establecer el directorio de trabajo, importar una tabla en formato csv, entender la mecánica de la función de `ggpplot2`que genera histogramas, etc.
++ Para facilitar vuestro trabajo, dejo aquí el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. 
 
 
 
@@ -358,17 +346,14 @@ La metodología de ingeniería inversa que hemos usado ha hecho que sea difícil
 + Segunda sesión:
   + Trabajo para mejorar la comunicación entre profesor y estudiantes. Esto está un poco al margen del objetivo concreto de esta práctica, pero fue relevante y necesario hacerlo en este momento.
   + Iniciamos la conversación con ChagGPT para construir nuestro histograma.
-+ Tercera sesión:
-
++ Tercera sesión
   + Enlazamos una serie de preguntas a ChatGPT sobre la estructura de datos del IFN.
-
   + Hablamos un poco de bases de datos relacionales.
-
   + Los estudiantes descargan las tablas de datos que usaremos para generar los histogramas.
-
 + Cuarta sesión
+  + Generamos el código para hacer el histograma usando ChatGPT
++ Quinta sesión (virtual y en casa). Esta última versión será realizada por los estudiantes de manera individual o grupal en casa o donde quieran. La idea es que ejecutéis el código de R adaptado a vuestros conjuntos de datos y que compartáis los resultados por Teams. También es importante que interpretéis dichos resultados según lo indicado en el apartado anterior llamado "interpretación de los resultados".
 
-  + Obtenemos al fin los dichosos histogramas!!!
 
 
 
