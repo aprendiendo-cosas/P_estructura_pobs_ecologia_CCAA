@@ -100,7 +100,7 @@ A continuación se muestran algunos de esos flujos de trabajo creados por los es
 
 Como hemos dicho más arriba, en esta práctica aplicamos la técnica de la ingeniería inversa para "aprender a aprender". El elemento clave de este proceso será una conversación con ChatGPT. De ahí iremos sacando ideas interesantes (o hilos de los que tirar) cuya aplicación nos permitirá aprender a enfrentarnos a situaciones novedosas y complejas como la que nos ocupa ahora. 
 
-Lo primero que preguntamos a ChatGPT en [esta](https://chatgpt.com/share/671f7083-8938-8009-9104-6a49fc3ef5eb) conversación es lo siguiente:
+Lo primero que preguntamos a ChatGPT en [esta](https://chatgpt.com/share/672ba3ed-0144-8009-85d1-b0bea4ac3a81) conversación es lo siguiente:
 
 > Soy un estudiante de segundo de ciencias ambientales en una asignatura llamada ecología. Necesito generar un histograma que muestre la distribución de edades o tamaños en poblaciones de encinas en un territorio concreto (Sierra Nevada, España). Nunca he hecho esto antes y no sé cómo hacerlo. El profesor me pide que elabore un flujo de trabajo para obtener el resultado anterior. ¿puedes ayudarme proponiendo ese flujo de trabajo?
 >
@@ -191,9 +191,11 @@ Después de la charla anterior con ChatGPT concluimos que usaremos los datos del
 
 Yo he preparado las tablas necesarias para generar histogramas en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
-+ [arboles_encinar_pinar.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/arboles_encinar_pinar.zip). Este archivo contiene los datos altura (en metros) de miles de árboles medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación y para los encinares. La tabla contiene los siguientes campos:
-  + Ecosistema: indica el ecosistema en el que se encuentra la parcela en la que se tomaron los datos en cuestión. Este campo nos permitirá filtrar por tipo de ecosistema para así usar solo los datos que correspondan al ecosistema que queramos.
-  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo.
++ [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
+  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. En este segundo caso tendrán que modificar ligeramente el código de R para filtrar por especie en la tabla. ChatGPT y yo estaremos encantados de ayudar en esto :)
+  + Altura: se muestra la altura en metros del árbol medido.
++ [alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
+  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. En todos los casos la especie es *Quercus ilex*.
   + Altura: se muestra la altura en metros del árbol medido.
 + [Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
   + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
@@ -229,9 +231,88 @@ Como en casi todos los lenguajes de programación, en R se suele trabajar usando
 
 *Pregunta*
 
+Ya estamos dispuestos a preguntar a ChatGPT cómo se generaría un histograma usando R. Ahí va la primera pregunta:
 
+> Dime cómo puedo generar un histograma en R partiendo de una tabla en la que haya dos campos. Uno indica la especie y otro la altura. La tabla tiene solo valores de una especie. La altura se expresa en metros. 
 
 *Respuesta*
+
+ChatGPT nos devuelve un código completo en el que empieza a hablar del concepto de paquete. Un paquete es un conjunto de funciones que no están en el "core" de R y que se instalan a posteriori para cumplir tareas específicas. Por ejemplo, en nuestro caso usaremos un paquete llamado *ggplot2* . Este paquete sirve para generar gráficas de tipos muy diferentes.
+
+Los paquetes han de ser instalados por primera vez. Para ello se usa la función *install.packages*, cuya sintaxis obliga a poner a continuación el nombre del paquete entre comillas y paréntesis. La línea de código que instala este paquete sería:
+
+```{R}
+install.packages("ggplot2")
+```
+
+ChatGPT también nos sugiere usar otro paquete (*dplyr*), pero en realidad no nos hace falta, así que no lo usaremos.
+
+Después de instalar los paquetes es necesario cargarlos en memoria. Esta segunda operación se debe de hacer siempre que se use el paquete en cada sesión. Es decir, tienes que ejecutar esta línea de código cada vez que abras R para generar histogramas. Sin embargo, la instalación se realiza solo una vez. La función que se usa para cargar paquetes se llama *library*. Su sintaxis se muestra a continuación.
+
+```{R}
+library(ggplot2)
+```
+
+
+
+*Pregunta*
+
+En la primera pregunta, ChatGPT olvida tener en cuenta la carpeta en la que vamos a trabajar. Cuando usamos lenguajes de programación, es necesario identificar claramente en qué carpeta trabajamos. Así que le preguntamos a la IA cómo se establece el directorio de trabajo. Esto nos ayuda a tener los datos bien organizados. Le diremos a R que use una carpeta siempre y que busque todos los datos allí. También guardará en esa carpeta el resultado de nuestro trabajo. 
+
+*Respuesta*
+
+A continuación se muestra la sintaxis del comando que permite establecer el directorio de trabajo (*setwd*)
+
+```{R}
+setwd("/tu/ruta")
+```
+
+Sustituye lo que hay entre comillas por tu ruta. Para acceder a la ruta, usa tu explorador de archivos, ponte sobre la barra de navegación, botón derecho y copiar ruta en modo texto. Ten en cuenta que en windows, cuando copies la ruta de la carpeta, pondrá las barras hacia la izquierda. Tienes que cambiarlas a mano y ponerlas hacia la derecha.  
+
+
+
+*Pregunta*
+
+Una vez resuelto el asunto del directorio de trabajo, retomamos el hilo que muestra ChatGPT antes de preguntar por esto
+
+*Respuesta*
+
+Ahora, usamos `ggplot2` para crear el histograma. Podemos ajustar el tamaño de las barras (bins) según necesites para una mejor visualización:
+
+```R
+ggplot(datos, aes(x = Altura)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  ggtitle("Distribución de Alturas de la Especie") +
+  xlab("Altura (metros)") +
+  ylab("Frecuencia")
+```
+
+En este código:
+- `aes(x = Altura)`: Define `Altura` como la variable para el eje x.
+- `geom_histogram()`: Crea el histograma con 20 barras (ajusta el número con `bins` según el rango y dispersión de tus datos).
+- `fill` y `color`: Colorean las barras y sus bordes.
+- `ggtitle()`, `xlab()`, y `ylab()`: Añaden título y etiquetas a los ejes.
+
+### Paso 5: Visualizar y Guardar el Histograma
+
+Simplemente ejecuta el código en R para ver el histograma. Si deseas guardar el gráfico en un archivo, puedes usar `ggsave()`:
+
+```R
+ggsave("histograma_alturas.png", plot = última_plot(), width = 10, height = 8, dpi = 300)
+```
+
+Este código guarda el último gráfico realizado en un archivo PNG con una resolución de 300 dpi.
+
+### Consideraciones Adicionales
+
+- **Revisar los datos**: Siempre es buena idea hacer una exploración preliminar de los datos para entender mejor su distribución y posibles valores atípicos.
+- **Ajustes adicionales**: Puedes modificar la apariencia del gráfico ajustando colores, tamaños de texto, etc., según tus preferencias o necesidades de presentación.
+
+Este flujo te permitirá generar y personalizar histogramas en R para visualizar la distribución de la altura de especies en tus estudios.
+
+
+
+
 
 
 
