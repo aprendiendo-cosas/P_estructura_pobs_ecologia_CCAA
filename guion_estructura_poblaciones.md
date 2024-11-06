@@ -305,7 +305,11 @@ Si estás usando RStudio, puedes exportar la gráfica directamente dándole al b
 
 *Aprendizajes*
 + Hemos aprendido algunas normas del lenguaje R: establecer el directorio de trabajo, importar una tabla en formato csv, entender la mecánica de la función de `ggpplot2`que genera histogramas, etc.
-+ Para facilitar vuestro trabajo, dejo aquí el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. 
++ Para facilitar vuestro trabajo, he preparado el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. Como algunos trabajáis con RStudio y otros no (gentileza de la UCO), os paso dos versiones diferentes del código adaptado a cada situación:
+  + Código si no usas RStudio.
+  + Código si sí usas RStudio.
++ Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos con RStudio y otro sin esta aplicación.
+
 
 
 
@@ -314,7 +318,7 @@ Si estás usando RStudio, puedes exportar la gráfica directamente dándole al b
 
 *Contextualización*
 
-
+Dar pistas sobre cómo interpretar los resultados. Quizás pensar en dar estructura a esto. interpretarlo en función de la longevidad de la especie, por ejemplo. hay ya un hilo en chatgpt sobre esto que puede servir
 
 *Pregunta*
 
