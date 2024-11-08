@@ -308,27 +308,31 @@ Si estás usando RStudio, puedes exportar la gráfica directamente dándole al b
 + Para facilitar vuestro trabajo, he preparado el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. Como algunos trabajáis con RStudio y otros no (gentileza de la UCO), os paso dos versiones diferentes del código adaptado a cada situación:
   + [Código si no usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/crear_histograma_sin_RStudio.zip)
   + [Código si sí usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/crear_histograma_con_RStudio.zip)
-+ Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos con RStudio y otro sin esta aplicación.
++ Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos sin RStudio y otro con esta aplicación.
 
 
+
+**Vídeo sin RSTudio**
+
+<iframe width="560" height="415" src="https://www.youtube.com/embed/uPAXVwZpeQs?si=CyqbiCa8m6D_XMng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+**Vídeo con RStudio**
+
+<iframe width="560" height="415" src="https://www.youtube.com/embed/tbUROSWrhdo?si=ZLuOJytT_9utx4So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 ### Interpretación de los resultados
 
-*Contextualización*
-
 Dar pistas sobre cómo interpretar los resultados. Quizás pensar en dar estructura a esto. interpretarlo en función de la longevidad de la especie, por ejemplo. hay ya un hilo en chatgpt sobre esto que puede servir
 
-*Pregunta*
+Una vez que hayamos generado los histogramas, es importante interpretarlos. De hecho, es lo más importante. Es lo que perseguimos, en realidad. Se trata de tratar de aprender algo sobre la estructura y funcionamiento del ecosistema en cuestión a partir del histograma de alturas de las especies que lo dominan. Para interpretar el histograma, sugiero dar los siguientes pasos:
 
-
-
-*Respuesta*
-
-
-
-*Aprendizajes*
+- En primer lugar es útil analizar asépticamente la gráfica. De esta manera podemos ver si hay pocos o muchos organismos pequeños (=jóvenes), de tamaño intermedio o grandes. Puede que la gráfica tenga forma de campana de Gauss (distribución normal) o de J inclinada, por poner dos ejemplos. Esta observación de la gráfica nos dará información sobre la abundancia relativa de individuos jóvenes y maduros y senescentes.
+- Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo.
+- Escribir un breve párrafo combinando la descripción "aséptica" anterior y su interpretación a la luz de las características de la especie analizada.
 
 
 
