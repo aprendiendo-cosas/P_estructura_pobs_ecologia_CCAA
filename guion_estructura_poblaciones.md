@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Cuatro sesiones de 1.5 horas cada una. Algunas horas más en casa. 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/2024_2025/imagenes/portada.png)
 
 
 
@@ -37,7 +37,7 @@ Para conseguir nuestro objetivo necesitamos datos. Esos datos se toman en campo 
 
 
 
-![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/esquema_gradiente_alturas.png)
+![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/2024_2025/imagenes/esquema_gradiente_alturas.png)
 
 
 
@@ -68,8 +68,8 @@ Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el p
 
 En los siguientes enlaces tienes información sobre flujos de trabajo. Recomiendo su lectura:
 
-+ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
-+ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
++ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
++ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
 
 Antes de empezar el ejercicio de preguntar a ChatGPT los estudiantes elaboraron una primera propuesta de flujo de trabajo. A pesar de su desconocimiento sobre los datos a utilizar, todos los grupos identificaron los pasos clave para crear un flujo de trabajo:
 
@@ -85,13 +85,13 @@ A continuación se muestran algunos de esos flujos de trabajo creados por los es
 
 
 
-![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/ejemplo_flujograma.png)
+![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/2024_2025/imagenes/ejemplo_flujograma.png)
 
 
 <iframe frameborder="0" style="width:100%;height:289px;" src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20ecologia%201.drawio#R%3Cmxfile%3E%3Cdiagram%20id%3D%22C5RBs43oDa-KdzZeNtuy%22%20name%3D%22Page-1%22%3E7VptV%2BI6EP41nKMf8PSF14%2BloLIXQQWvd%2FdbaEPJGhq2DQj76%2B%2BkSSl9WV5U1N17PUdpJtNJMs%2FkmUmwZNqz1VWA5tMb5mJaMjR3VTLbJcPQK2YFPoRkLSWNqhJ4AXGVUiIYkp9YCTUlXRAXhylFzhjlZJ4WOsz3scNTMhQE7DmtNmE0PeoceTgnGDqI5qWPxOVTtQqjnsivMfGm8ch6rSl7ZihWVisJp8hlz1sis1My7YAxLp9mKxtT4bzYL4%2Fd9SPtPdWuvtyFP9BD669R%2F%2B%2ByNHZ5zCubJQTY529r2pCml4gulL%2FUWvk6dmDAFr6LhRGtZLamfEbhUYfH75jztQIcLTgDEQv4lHnMR7TH2FzpTZjPlZou2th3LQEstMeUOU9SdEkoVWNAS%2Bk3oBXygD1tsBMGNkAIZYrGmLaQ8%2BRFE7UZZQF0%2BczHwpQLwaDWkkyuk0hbB%2FpWYRCyReDgHXqmCnEUeHiXvZrUE%2FPbilOF3BVmM8yDNSgEmCJOlulgRmpPeBs99Sr4Fa23FOaM%2BDzcsnwrBKCgtvdml6rNrZuZGDpOHx7kDOLW1lISURSXR8SomYvRW2s46n6zep0hyNsd%2BGP1RhZ83Az68GmbpaZu7QhkEUTPU8LxcI4iNJ%2BB%2B9LBvR204L2WR1EYqpDbE5HHRdQSBxyvdsZA3FtNO7%2Bhms8JrekxV023KK2i%2FTpqtpA7HpjqfvLYv%2F9%2Ba3p5Y%2FKoHUge9QPJQwVOWbswUpFjKuSOI5eEDWIVNpmEMNGtODqWgMwMoUCQ7ySgPfqnIaBaLs7vO%2Fbgttuz7kHc7V8O7m8suxvxjtnP886UzcaLcD%2FnpAJPhPUlmhEqVnqN6RJz4qACZkKUeD40HIhBHBRHNAxJfA9ataQ1inZQufKOjKXXD6Ss5qkoq56DsjO87dhdkUNu7zvtwU23b%2FVHnT8ueZhGBopm9f2yh9Zr9qxvd5OGdce65evvd%2BhxtVnCruyRULkjXEictJ%2FTueM41%2B0lzy3HVAv8EsteyqEKl0olS2gZf8ukod7awYyVZgbgWsaQzCo5Qy8gyUI4DzhJ%2FA%2Fny%2BE03hnOfNF9aT30oaiuUfBYyyVLePR4hJMUCdJL4V37sWBxRzmM6FDU6LoxX8nXVH9s6Cy2BAnKL7Q03tRhZUcWYsJg4I3PjCrQGaxU2344j4xrGdWK7Adijj4rmlKLpjlRGVcow7hoJphdjX7FmAcTMrQh8sNspzRmBQRR%2BRiCUjnEAZlI88DTvKxytbBO8YQXumGvP%2FOvfEFjGBbKD6uNQzn8TwY7TT1HPbq3ILDppIQS3xGaciQIEDlYegIglkikxUeiQ3zChVOK5n2%2BZ6hfTywVf69J1afKtzk6NvKlT7OAh7Lb%2FM3SbSW%2FoXuD%2B6INfbYkjGKOosnDTGZozqLI0VwR%2FSHBUGLDg4%2BXyEXnvzMqm%2Brmo1A55Ah9wqy5fdIsnN%2Bh11Tvk13NevOi2kgjGJ9lj02wBbZMLWPrxDk2f660B%2F121%2B4O%2BtHNlt3r3gjubuijrm0NVYrpjbqjh7ZsdEb259xopg7erTeTnzRo9QMPHyfbd%2Flz4H%2BxWq02MknKTPbEsfupZmZsZQ%2BOJ95MjU%2FOpM1PjbxRfwXy2TNPga0Tg9%2FMgT%2ByWj1Rfn6F36t7yaKXwKL5oKCUzEP8cVSZ3ThGtXJRb2rJj5HjynphYFxUjBOxZXyI%2FSP8q%2Bv55FPs0Nd70%2FRvwrslbY16leDbYuxrVx1UcPF1ZrMZLBwFUbk9jmptL5DHtglxUHiec6s4Tqb9l7sHFi6Cl6mlOmbEdeVXLhhO42gcmRJMpy7pwW61Vaq2ha0FZ6G6wNzcWWa%2B%2B5gQSl%2F1dcjhEFbjemFzednI1w9FGJqnwjB%2F22UDfo5wfHQMD4Xn1WGbsznzAjSRPUgKXTzLCzF3ckB%2F0K7JXt1DbXwRp5n3qNoKvf7mpyVwWrD%2BRzQuqnHz63Zfe5VqrV9dG%2ByKpk9SG2S%2F5M%2FheWhhsHnxV5ehL64KoJn8341UT%2F57yez8Cw%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E"></iframe>
 
 
-![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/ejemplo_flujograma_2.png)
+![flujograma1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/2024_2025/imagenes/ejemplo_flujograma_2.png)
 
 
 
@@ -170,7 +170,7 @@ La respuesta de ChatGPT es clara: debemos usar SIG, lenguajes de programación (
 
 *Aprendizajes*
 
-+ Los inventarios forestales son herramientas muy valiosas para caracterizar la estructura de los bosques. [Este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/Capitulo_16.pdf) capítulo de libro describe muy bien su estructura y utilidades. 
++ Los inventarios forestales son herramientas muy valiosas para caracterizar la estructura de los bosques. [Este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2024_2025/biblio/Capitulo_16.pdf) capítulo de libro describe muy bien su estructura y utilidades. 
 + Es importante hacer preguntas concretas a las IAs.
 + Estas herramientas no son buenas (por ahora) para buscar contenidos en la web. Por eso, cuando preguntamos por una fuente de información, suelen dar respuestas genéricas poco útiles.
 + Es importante identificar las respuestas que son poco elaboradas. Cuando una IA incorpora palabras como "posiblemente" o dice que no tiene información sobre algo, normalmente el resto de su respuesta es como "marcarse un triple". Es decir, está probando suerte para ver si su respuesta nos resulta atractiva. 
@@ -190,7 +190,7 @@ Después de la charla anterior con ChatGPT concluimos que usaremos los datos del
 
 Yo he preparado las tablas necesarias para generar histogramas en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
-+ [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
++ [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2024_2025/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. En este segundo caso tendrán que modificar ligeramente el código de R para filtrar por especie en la tabla. ChatGPT y yo estaremos encantados de ayudar en esto :)
   + Altura: se muestra la altura en metros del árbol medido.
 + [alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
