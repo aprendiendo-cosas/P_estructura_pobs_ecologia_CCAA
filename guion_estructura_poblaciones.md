@@ -4,7 +4,7 @@
 > + **_Versión_**: 2025-2026
 > + **_Asignatura (grado)_**: Ecología (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Dos sesiones de 2 horas cada una. Algunas horas más en casa. 
+> + **_Duración_**: Dos sesiones de 2 horas cada una. Alguna hora más en casa. 
 
 ![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/portada.png)
 
@@ -110,9 +110,9 @@ Algunos estudiantes se muestran rápidamente preocupados por los datos que usare
 
 La respuesta corta a la pregunta es que yo os daré esos datos. Más abajo tenéis los correspondientes a vuestro ecosistema.
 
-La respuesta larga es que esos datos proceden de inventarios florísticos y forestales. 
+La respuesta larga es que esos datos proceden de inventarios florísticos y forestales:
 
-Un inventario forestal es un proceso sistemático de recopilación y análisis de datos sobre los recursos forestales de una determinada área. Este inventario incluye información sobre la cantidad, calidad, distribución y estado de los árboles y otras especies vegetales leñosas. Los datos obtenidos permiten conocer la estructura del bosque (como la densidad, el diámetro y la altura de los árboles) y su funcionamiento, ya que facilitan la evaluación de aspectos como la regeneración, la productividad y la dinámica de los ecosistemas forestales. En la mayoría de los países se realizan inventarios forestales con cierta periodicidad. En España disponemos del [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html) en el que se repite la captura de datos de cada punto con una periodicidad de unos 10 años. Por otro lado, un inventario florístico consiste en la identificación y registro de todas las especies de plantas presentes en un área específica, abarcando tanto especies leñosas como herbáceas. Este tipo de inventario proporciona información detallada sobre la composición y diversidad vegetal, lo que permite analizar la estructura de la comunidad vegetal y comprender el funcionamiento del ecosistema, incluyendo las relaciones ecológicas y los procesos que mantienen la biodiversidad. Ambos inventarios son herramientas fundamentales para entender cómo se organizan y funcionan los ecosistemas.
+Un inventario forestal es un proceso sistemático de recopilación y análisis de datos sobre los recursos forestales de una determinada área. Este inventario incluye información sobre la cantidad, calidad, distribución y estado de los árboles y otras especies vegetales leñosas. Los datos obtenidos permiten conocer la estructura del bosque (como la densidad, el diámetro y la altura de los árboles) y su funcionamiento, ya que facilitan la evaluación de aspectos como la regeneración, la productividad y la dinámica de los ecosistemas forestales. En la mayoría de los países se realizan inventarios forestales con cierta periodicidad. En España disponemos del [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html) en el que se repite la captura de datos de cada punto con una periodicidad de unos 10 años. [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/presentacion/inventarios_forestales.pptx) tienes algo más de información sobre los inventarios forestales. Por otro lado, un inventario florístico consiste en la identificación y registro de todas las especies de plantas presentes en un área específica, abarcando tanto especies leñosas como herbáceas. Este tipo de inventario proporciona información detallada sobre la composición y diversidad vegetal, lo que permite analizar la estructura de la comunidad vegetal y comprender el funcionamiento del ecosistema, incluyendo las relaciones ecológicas y los procesos que mantienen la biodiversidad. Ambos inventarios son herramientas fundamentales para entender cómo se organizan y funcionan los ecosistemas.
 
 
 
