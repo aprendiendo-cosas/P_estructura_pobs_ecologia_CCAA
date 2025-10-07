@@ -65,7 +65,27 @@ En el primer día de esta práctica intentamos recopilar información sobre lo q
 
 A continuación se aporta algo de información sobre los conceptos más relevantes que salen a relucir:
 
+
+
+### ¿Qué es un histograma?
+
+Parecía obvio que teníamos que entender bien qué es un histograma. A pesar de haberlos estudiado en varias asignaturas (la última vez hace menos de un año en estadística...), no tenemos claro qué es. Así que, buscamos en internet.
+
+Concluimos que es una gráfica que nos permite representar la frecuencia o número de veces que aparece un tipo de objeto concreto dentro de un conjunto muestral. Así, por ejemplo, si queremos saber cómo se distribuyen las alturas en una clase, medimos a cada estudiante y luego construimos el histograma. En el proceso de construcción, realizamos cierta agrupación en clases. Es decir, transformamos una variable continua (las alturas de los alumnos) en una discreta (los grupos que usamos para clasificarlos). Esto nos permite conocer si en la clase hay más alumnos altos o bajos, por ejemplo.
+
+Para entender bien qué es un histograma, podéis ver este de aquí:
+
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/tabla.png)
+
+
+
+
+En él se representan las barras del histograma, pero también los valores concretos de la medida que estamos caracterizando para cada uno de los elementos del grupo. Si estamos representando el tamaño de una serie de árboles, el eje X representa las clases de tamaño (a la izquierda los más bajos) y el eje Y representa cuántos árboles de cada clase hay. Las líneas coloreadas que hay en el eje X representan los valores de las medidas concretas de cada árbol. De esta forma vemos cómo se distribuyen los tamaños en la población. A esta gráfica se le llama "rug plot". 
+
+
+
 ### Flujo de trabajo
+
 Un flujo de trabajo es una secuencia de acciones ordenadas cuya ejecución tiene un objetivo determinado. Esta definición tan genérica se puede particularizar más en nuestro ámbito de trabajo: secuencia de acciones que realizamos sobre un conjunto de datos para satisfacer un objetivo dado. En nuestro caso, el objetivo es responder a la pregunta descrita en la sección anterior.
 
 Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el proceso de captura y análisis de la información ambiental. En esta sesión construiremos un flujo de trabajo para generar una gráfica. Pero la idea es que esta herramienta esté presente (de forma implícita) en las demás prácticas de la asignatura.
@@ -82,7 +102,7 @@ Las tablas son los elementos fundamentales que usamos para almacenar informació
 
 Dejo aquí uno de los garabatos que pintamos en la pizarra para describir una tabla. Por si es útil.
 
-![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/main/imagenes/tabla.png)
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/tabla.png)
 
 
 
