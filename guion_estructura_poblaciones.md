@@ -119,7 +119,9 @@ Un inventario forestal es un proceso sistemático de recopilación y análisis d
 
 ## Segunda sesión de la práctica
 
-Yo he preparado las tablas necesarias para generar histogramas en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
+### Datos de partida
+
+Empezamos la sesión descargando las tablas de datos que usaremos para generar el histograma. Yo he preparado las tablas necesarias en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
 + **Pinares de repoblación:** [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. En este segundo caso tendrán que modificar ligeramente el código de R para filtrar por especie en la tabla. ChatGPT y yo estaremos encantados de ayudar en esto :)
@@ -134,15 +136,15 @@ Yo he preparado las tablas necesarias para generar histogramas en todos los ecos
 + **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
   + Especie: en este caso todos los registros tienen el valor de *Populus*.
   + Altura_m: indica la altura en metros de cada árbol.
-+ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/alturas_romero.zip)
++ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinales*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
 + **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
 + **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
 
+
+
 ### Creación del histograma y visualización de resultados
 
-*Contextualización*
-
-En esta fase final de la práctica (al fin), vamos a preguntar a ChatGPT cómo se construye un histograma usando R. Pero antes de eso, os cuento por aquí algunas cosas generales de este lenguaje de programación.
+En esta fase final de la práctica vamos a preguntar a ChatGPT cómo se construye un histograma usando R. Pero antes de eso, os cuento por aquí algunas cosas generales de este lenguaje de programación.
 
 R es uno de los lenguajes de programación más usados en el ámbito científico. Tiene funciones para realizar análisis estadísticos, dibujar distintos tipos de gráficas, procesar información georreferenciada y muchas otras cosas más. Como cualquier lenguaje de programación, R se parece mucho a un idioma. Tiene sus normas (sintaxis), sus tipos de "palabras" (funciones, parámetros, etc.) y también tiene una forma particular de almacenar tipos de datos. En esta sección nos familiarizaremos un poco con algunos elementos de R. Iremos aprendiendo poco a poco usando algunas de sus funciones.
 
@@ -258,9 +260,7 @@ Si estás usando RStudio, puedes exportar la gráfica directamente dándole al b
 
 ### Interpretación de los resultados
 
-Dar pistas sobre cómo interpretar los resultados. Quizás pensar en dar estructura a esto. interpretarlo en función de la longevidad de la especie, por ejemplo. hay ya un hilo en chatgpt sobre esto que puede servir
-
-Una vez que hayamos generado los histogramas, es importante interpretarlos. De hecho, es lo más importante. Es lo que perseguimos, en realidad. Se trata de tratar de aprender algo sobre la estructura y funcionamiento del ecosistema en cuestión a partir del histograma de alturas de las especies que lo dominan. Para interpretar el histograma, sugiero dar los siguientes pasos:
+Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Esto es lo que perseguimos, en realidad. Se trata de tratar de aprender algo sobre la estructura y funcionamiento del ecosistema en cuestión a partir del histograma de tamaños de la especie que lo domina. Para interpretar el histograma, sugiero dar los siguientes pasos:
 
 - En primer lugar es útil analizar asépticamente la gráfica. De esta manera podemos ver si hay pocos o muchos organismos pequeños (=jóvenes), de tamaño intermedio o grandes. Puede que la gráfica tenga forma de campana de Gauss (distribución normal) o de J inclinada, por poner dos ejemplos. Esta observación de la gráfica nos dará información sobre la abundancia relativa de individuos jóvenes y maduros y senescentes.
 - Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo.
