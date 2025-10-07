@@ -29,7 +29,7 @@ Como todas las actividades de la asignatura, esta práctica tiene dos tipos de o
 
 ## Contextualización ecológica del problema
 
-Para lograr los anteriores objetivos de aprendizaje plantearemos un problema a resolver. Se trata de caracterizar la estructura de cada uno de los ecosistemas que cada grupo tiene asignado y que visitaremos en Sierra Nevada. Concretamente usaremos un descriptor que estudiamos en los primeros días de clase: diagramas rango-edad o pirámides poblacionales. Son esquemas que nos dan idea de cuándos individuos de qué tamaño o edad hay en una población determinada. Como vimos en teoría, esos diagramas nos ayudan a entender también cómo funciona la población con relación a la reproducción. Y esto es importante para estimar o inferir posibles problemas que afecten a la población. Una población de una especie cualquiera en la que no hay regeneración tendrá una pirámide poblacional con muy pocos individuos jóvenes. Esto pone en peligro su supervivencia en el corto y medio plazo.
+Para lograr los anteriores objetivos de aprendizaje plantearemos un problema a resolver. Se trata de caracterizar la estructura de cada uno de los ecosistemas que cada estudiante tiene asignado y que visitaremos en Sierra Nevada. Concretamente usaremos un descriptor que estudiamos en los primeros días de clase: diagramas rango-edad o pirámides poblacionales. Son esquemas que nos dan idea de cuándos individuos de qué tamaño o edad hay en una población determinada. Como vimos en teoría, esos diagramas nos ayudan a entender también cómo funciona la población con relación a la reproducción. Y esto es importante para estimar o inferir posibles problemas que afecten a la población. Una población de una especie cualquiera en la que no hay regeneración tendrá una pirámide poblacional con muy pocos individuos jóvenes. Esto pone en peligro su supervivencia en el corto y medio plazo.
 
 Pero esto sirve para poblaciones, no para ecosistemas. O al menos no sabemos si sirve porque no hemos estudiado aún los ecosistemas. Así que, asumiremos algo importante: la estructura de un sistema complejo (un ecosistema) se parece mucho a la estructura de los elementos que lo constituyen (una serie de poblaciones de seres vivos en nuestro caso). Así que, estudiaremos la estructura de un ecosistema a partir de la estructura de las poblaciones que lo forman. Pero pondremos el foco en aquellas poblaciones que son más relevantes para la estructura. Por ejemplo, en un bosque nos referimos a las poblaciones de los árboles que dominan (y dan nombre) al bosque. En un pinar de repoblación, por ejemplo, son los pinos las especies dominantes. Caracterizaremos la estructura de edades de las poblaciones de pinos y asumiremos que dicha estructura se parece a la del ecosistema. Esto es una asunción importante, pero con el conocimiento que tenemos de ecología, es razonable.
 
@@ -47,7 +47,7 @@ Esta práctica es, seguramente, la más compleja que tendremos durante la asigna
 
 + Los objetivos docentes que nos planteamos son ambiciosos. Pero esto no es lo más complejo.
 + Vamos a tratar de cumplir nuestro objtetivo (generar un histograma para cada tipo de ecosistema) usando la "ingeniería inversa". Caracterizaremos un histograma e iremos dando pasos hacia atrás para tratar de aprender cómo se construye uno. Esto es habitual cuando uno se enfrenta a algo completamente nuevo. Aprenderemos esta técnica que será muy útil en vuestro desempeño profesional.
-+ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Procederé como si fuera uno de vosotros. Simularé que no sé hacer el trabajo y, juntos, aprendremos a hacerlo. Es decir, avanzaremos en clase con la siguiente premisa: ¿qué haría yo (50 años) si tuviera el conocimiento de mis estudiantes y acceso a las mismas herramientas y datos que ellos?
++ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Procederé como si fuera uno de vosotros. Simularé que no sé hacer el trabajo y, juntos, aprendremos a hacerlo. Es decir, avanzaremos en clase con la siguiente premisa: ¿qué haría yo (51 años) si tuviera el conocimiento de mis estudiantes y acceso a las mismas herramientas y datos que ellos?
 
 Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 
@@ -56,12 +56,16 @@ Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 - Mejora en la transferibilidad a situaciones reales. Si aprendemos bien el método que propongo aquí, os resultará más fácil transferirlo a otras situaciones (por ejemplo, a vuestro TFG, para el que no falta tanto tiempo...).
 - Mejora en la retención del conocimiento. Dicen que Confucio dijo algo así: *Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí*. Así que, según parece, nuestro cerebro retiene más eficazmente la información si pone en práctica el nuevo conocimiento adquirido. 
 
-Para conseguir lo anterior nos apoyaremos en ChatGPT. Trataremos de establecer una conversación con esta IA. A partir de sus respuestas iremos elaborando un flujo de trabajo que nos permitirá crear nuestro histograma. Además, yo explicaré algunas cuestiones concretas que vayan saliendo de la repuesta de la IA. Se trata, en definitiva, de ir usando esta herramienta como una especie de profesor que va dándonos hilos de los que tirar. 
+Para conseguir lo anterior nos apoyaremos en las herramientas IAs que conocimos en la práctica anterior. A partir de sus respuestas iremos elaborando un flujo de trabajo que nos permitirá crear nuestro histograma. Además, yo explicaré algunas cuestiones concretas. 
 
 
 
-## Flujos de trabajo
+## Primera sesión de la práctica
+En el primer día de esta práctica intentamos recopilar información sobre lo que necesitamos hacer sin ningún tipo de ayuda por parte del profesor. Me limito a comentar algunas de las ideas que surgen cuando los estudiantes buscan en internet, preguntan a las IAs y reflexionan por sí mismos y mismas.
 
+A continuación se aporta algo de información sobre los conceptos más relevantes que salen a relucir:
+
+### Flujo de trabajo
 Un flujo de trabajo es una secuencia de acciones ordenadas cuya ejecución tiene un objetivo determinado. Esta definición tan genérica se puede particularizar más en nuestro ámbito de trabajo: secuencia de acciones que realizamos sobre un conjunto de datos para satisfacer un objetivo dado. En nuestro caso, el objetivo es responder a la pregunta descrita en la sección anterior.
 
 Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el proceso de captura y análisis de la información ambiental. En esta sesión construiremos un flujo de trabajo para generar una gráfica. Pero la idea es que esta herramienta esté presente (de forma implícita) en las demás prácticas de la asignatura.
@@ -71,54 +75,21 @@ En los siguientes enlaces tienes información sobre flujos de trabajo. Recomiend
 + [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
 + [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
 
-Antes de empezar el ejercicio de preguntar a ChatGPT los estudiantes elaboraron una primera propuesta de flujo de trabajo. A pesar de su desconocimiento sobre los datos a utilizar, todos los grupos identificaron los pasos clave para crear un flujo de trabajo:
+### Las tablas de datos
+En nuestras pesquisas por internet, observamos que los datos que usaremos para generar el histograma se almacenan en tablas. Es una oportunidad estupenda para definir esta "entidad". Una tabla es un objeto (casi siempre digital) que nos permite caracterizar (= describir con detalle) elementos del mismo tipo. Por ejemplo, si queremos ordenar nuestra colección de libros o de CDs (¿sigue habiendo CDs?), almacenaremos la información en una tabla. Las tablas constan de filas y columnas. Las columnas representan los descriptores o características que usamos para describir los objetos (ej. título del libro, número de páginas, género del libro, etc.). Las filas son los elementos caracterizados. Es decir, en cada fila hay uno de los objetos descritos.
 
-- Identificación de fuentes de datos relevantes.
-- Procesamiento de la información generada en campo.
-- Aplicación de algoritmos para generar el histograma.
-- Discusión de los resultados mostrados en la gráfica.
+Las tablas son los elementos fundamentales que usamos para almacenar información. Cada tabla puede almacenar millones de filas y de campos. Además, las tablas pueden relacionarse entre sí. Pero de eso hablaremos en otra ocasión.
 
-A continuación se muestran algunos de esos flujos de trabajo creados por los estudiantes:
+Dejo aquí uno de los garabatos que pintamos en la pizarra para describir una tabla. Por si es útil.
 
-
-
-
-## Resumen de aprendizajes que adquirimos en la conversación con ChatGPT
-
-Como hemos dicho más arriba, en esta práctica aplicamos la técnica de la ingeniería inversa para "aprender a aprender". El elemento clave de este proceso será una conversación con ChatGPT. De ahí iremos sacando ideas interesantes (o hilos de los que tirar) cuya aplicación nos permitirá aprender a enfrentarnos a situaciones novedosas y complejas como la que nos ocupa ahora. 
-
-Lo primero que preguntamos a ChatGPT en [esta](https://chatgpt.com/share/672ba3ed-0144-8009-85d1-b0bea4ac3a81) conversación es lo siguiente:
-
-> Soy un estudiante de segundo de ciencias ambientales en una asignatura llamada ecología. Necesito generar un histograma que muestre la distribución de edades o tamaños en poblaciones de encinas en un territorio concreto (Sierra Nevada, España). Nunca he hecho esto antes y no sé cómo hacerlo. El profesor me pide que elabore un flujo de trabajo para obtener el resultado anterior. ¿puedes ayudarme proponiendo ese flujo de trabajo?
->
-> En el flujo de trabajo muestra las posibles fuentes de datos (Reales) que podría utilizar, así como los procedimientos de agregación necesarios para hacer la gráfica.
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/main/imagenes/tabla.png)
 
 
 
-En su respuesta, la IA nos propone varios pasos en el flujo de trabajo. Usamos dichos pasos o fases para nombrar las siguientes secciones. En ellas iré poniendo las ideas principales que vayan surgiendo en la conversación con la IA. Todos los apartados siguientes se estructuran de la misma forma:
-
-+ *Contextualización*.  Un par de frases explicitando cómo ChatGPT nos ha traído a este apartado.
-+ *Pregunta* que formulamos con relación a cada apartado.
-+ *Respuesta*. Extracto de las respuesta más relevantes combinadas con otras búsquedas específicas que hacemos en internet. Este apartado y el anterior se repetirán tantas veces como preguntemos a ChatGPT en cada apartado.
-+ *Aprendizajes*. Resumen de los principales aprendizajes que obtenemos.
 
 
 
-### Recopilación de datos
-
-
-
-### Procesamiento de datos
-
-*Contextualización*
-
-Después de la charla anterior con ChatGPT concluimos que usaremos los datos del IFN, pero no tenemos tiempo ni conocimientos suficientes para procesar los datos en bruto (almacenados en varias tablas diferentes) y generar una tabla sencilla que contenga los datos que necesitamos para el inventario. Esta tabla deberá de tener tantas filas como árboles (hierba o arbustos) hayan sido medidos. Y también tendrá un campo que mostrará la especie del árbol en cuestión. Deberá de tener una estructura parecido a esto:
-
-| Especie      | Tamanio |
-| ------------ | ------- |
-| Quercus ilex | 2,3     |
-| Quercus ilex | 5,34    |
-| Quercus ilex | 1,3     |
+## Segunda sesión de la práctica
 
 Yo he preparado las tablas necesarias para generar histogramas en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
@@ -265,35 +236,6 @@ Una vez que hayamos generado los histogramas, es importante interpretarlos. De h
 - En primer lugar es útil analizar asépticamente la gráfica. De esta manera podemos ver si hay pocos o muchos organismos pequeños (=jóvenes), de tamaño intermedio o grandes. Puede que la gráfica tenga forma de campana de Gauss (distribución normal) o de J inclinada, por poner dos ejemplos. Esta observación de la gráfica nos dará información sobre la abundancia relativa de individuos jóvenes y maduros y senescentes.
 - Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo.
 - Escribir un breve párrafo combinando la descripción "aséptica" anterior y su interpretación a la luz de las características de la especie analizada.
-
-
-
-
-
-
-
-## Cronología de la práctica
-
-La metodología de ingeniería inversa que hemos usado ha hecho que sea difícil planificar a priori la temporalidad de los conceptos estudiados. Por eso en esta sección se describe cómo discurrió la práctica y cuánto tiempo duró cada sección.
-
-
-+ Primera sesión:
-  + Planteamiento de objetivos.
-  + Contextualización ecológica.
-  + Breve introducción al concepto de tabla.
-  + Breve introducción al concepto de flujo de trabajo.
-  + Los estudiantes generan una primera versión de un flujo de trabajo.
-+ Segunda sesión:
-  + Trabajo para mejorar la comunicación entre profesor y estudiantes. Esto está un poco al margen del objetivo concreto de esta práctica, pero fue relevante y necesario hacerlo en este momento.
-  + Iniciamos la conversación con ChagGPT para construir nuestro histograma.
-+ Tercera sesión
-  + Enlazamos una serie de preguntas a ChatGPT sobre la estructura de datos del IFN.
-  + Hablamos un poco de bases de datos relacionales.
-  + Los estudiantes descargan las tablas de datos que usaremos para generar los histogramas.
-+ Cuarta sesión
-  + Generamos el código para hacer el histograma usando ChatGPT
-+ Quinta sesión (virtual y en casa). Esta última versión será realizada por los estudiantes de manera individual o grupal en casa o donde quieran. La idea es que ejecutéis el código de R adaptado a vuestros conjuntos de datos y que compartáis los resultados por Teams. También es importante que interpretéis dichos resultados según lo indicado en el apartado anterior llamado "interpretación de los resultados".
-
 
 
 
