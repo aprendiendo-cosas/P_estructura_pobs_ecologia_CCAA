@@ -142,7 +142,7 @@ Empezamos la sesión descargando las tablas de datos que usaremos para generar e
 
 
 
-### Creación del histograma y visualización de resultados
+### Nociones generales de R y Estudio
 
 En esta fase final de la práctica vamos a preguntar a ChatGPT cómo se construye un histograma usando R. Pero antes de eso, os cuento por aquí algunas cosas generales de este lenguaje de programación.
 
@@ -154,95 +154,127 @@ Como en casi todos los lenguajes de programación, en R se suele trabajar usando
 
 ![R_UCO](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/entorno_UCO.png)
 
++ Otra opción para los que no tienen RStudio consiste en crear un script (programa) desde el mismo R. Esto les facilitará un poco las cosas.
 
-
-- Los estudiantes que usen su ordenador podrán trabajar con RStudio, que tiene una interfaz como se muestra en la imagen posterior. En el cuadrante superior izquierdo iremos creando el programa que se irá ejecutando línea a línea en el terminal que hay en el cuadrante inferior izquierdo. Conforme vayamos creando datos y tablas, se mostrarán en el cuadrante de arriba a la derecha. Abajo a la derecha se mostrará finalmente el histograma. Para instalar R y RStudio hay que seguir las instrucciones que se indican en [esta](https://posit.co/download/rstudio-desktop/) página. Primero hay que instalar R (opción 1: install R) y luego RStudio (2: Install RSstudio)
++ Los estudiantes que usen su ordenador podrán trabajar con RStudio, que tiene una interfaz como se muestra en la imagen posterior. En el cuadrante superior izquierdo iremos creando el programa que se irá ejecutando línea a línea en el terminal que hay en el cuadrante inferior izquierdo. Conforme vayamos creando datos y tablas, se mostrarán en el cuadrante de arriba a la derecha. Abajo a la derecha se mostrará finalmente el histograma. Para instalar R y RStudio hay que seguir las instrucciones que se indican en [esta](https://posit.co/download/rstudio-desktop/) página. Primero hay que instalar R (opción 1: install R) y luego RStudio (2: Install RSstudio)
 
 ![RStudio](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/entorno_RStudio.png)
 
 
 
-*Pregunta*
+### Creación del histograma y visualización de resultados
 
-Ya estamos dispuestos a preguntar a ChatGPT cómo se generaría un histograma usando R. Ahí va la primera pregunta:
-
-> Dime cómo puedo generar un histograma en R partiendo de una tabla en la que haya dos campos. Uno indica la especie y otro la altura. La tabla tiene solo valores de una especie. La altura se expresa en metros. 
-
-*Respuesta*
-
-ChatGPT nos devuelve un código completo en el que empieza a hablar del concepto de paquete. Un paquete es un conjunto de funciones que no están en el "core" de R y que se instalan a posteriori para cumplir tareas específicas. Por ejemplo, en nuestro caso usaremos un paquete llamado `ggplot2` . Este paquete sirve para generar gráficas de tipos muy diferentes.
-
-Los paquetes han de ser instalados por primera vez. Para ello se usa la función `install.packages`, cuya sintaxis obliga a poner a continuación el nombre del paquete entre comillas y paréntesis. La línea de código que instala este paquete sería:
-
-```{R}
-install.packages("ggplot2")
-```
-
-ChatGPT también nos sugiere usar otro paquete (`dplyr`), pero en realidad no nos hace falta, así que no lo usaremos.
-
-Después de instalar los paquetes es necesario cargarlos en memoria. Esta segunda operación se debe de hacer siempre que se use el paquete en cada sesión. Es decir, tienes que ejecutar esta línea de código cada vez que abras R para generar histogramas. Sin embargo, la instalación se realiza solo una vez. La función que se usa para cargar paquetes se llama *library*. Su sintaxis se muestra a continuación.
-
-```{R}
-library(ggplot2)
-```
+En esta sección aprenderemos las instrucciones de R que nos permitirán generar el histograma. Para ello iremos preguntando a ChatGPT o a Claude sobre cómo proceder. Como los promts que usamos son diferentes, no tiene mucho sentido reproducir aquí la conversación con las IAs. Solo pegaré el primer prompt que yo he usado para que os sirva de guía. A continuación describiré paso a paso las distintas líneas del programa que hemos creado en R para generar el histograma. 
 
 
 
-*Pregunta*
+> Estoy aprendiendo a usar R. Esta es mi primera vez. Así que necesito que me contestes explicándolo todo bien y usando siempre las opciones más fáciles.
+>
+> Dicho esto, tengo que generar un histograma de frecuencias a partir de una tabla en formato csv que contiene las medidas en metros de una serie de árboles de la misma especie.
+>
+> Dime cómo puedo hacerlo paso a paso.
 
-En la primera pregunta, ChatGPT olvida tener en cuenta la carpeta en la que vamos a trabajar. Cuando usamos lenguajes de programación, es necesario identificar claramente en qué carpeta trabajamos. Así que le preguntamos a la IA cómo se establece el directorio de trabajo. Esto nos ayuda a tener los datos bien organizados. Le diremos a R que use una carpeta siempre y que busque todos los datos allí. También guardará en esa carpeta el resultado de nuestro trabajo. 
 
-*Respuesta*
 
-A continuación se muestra la sintaxis del comando que permite establecer el directorio de trabajo (*setwd*)
+A partir de la respuesta de R, vamos generando el siguiente código
+
+#### Establecimiento del directorio de trabajo.
+
+En R y en otros lenguajes de programación es importante indicar al principio en qué carpeta están los datos con los que trabajamos. Esto lo decimos al principio del programa y luego ya el software busca en esa carpeta siempre que necesita acceder a algo.
+
+Para establecer el directorio de trabajo usamos una función llamada *setwd*. La sintaxis es esta:
 
 ```{R}
+# Establecemos el directorio de trabajo
 setwd("/tu/ruta")
 ```
+Donde pone "/tu/ruta" debemos de poner la ruta a la carpeta donde están nuestros datos en el ordenador. Para ello hacemos lo siguiente:
++ Si tienes Mac ve a la carpeta usando Finder. Selecciona un archivo que haya en esa carpeta, dale al botón derecho y selecciona "Obtener información". Eso abrirá un menú en el que aparece la ruta. Copia la ruta y pégala directamente entre las comillas del código anterior.
++ Si usas un Windows:
+  + Ve al explorado de archivos y navega a la carpeta que te interesa.
+  + En la barra de arriba verás los nombres de las carpetas dentro de las que esté tu carpeta destino. Si hay, claro. 
+  + Haz click en la parte derecha de esa barra. Verás como la ruta se transforma en algo así: C:/carpeta/.... En los ordenadores de clase aparece algo así "//cifs/....". Copia esa cadena de texto.
+  + Pégala en tu programa entre las comillas.
+  + Ahora sustituye las barras \ por barras hacia la derecha: /. Windows va a su aire y pone las barras como quiere...
 
-Sustituye lo que hay entre comillas por tu ruta. Para acceder a la ruta, usa tu explorador de archivos, ponte sobre la barra de navegación, botón derecho y copiar ruta en modo texto. Ten en cuenta que en windows, cuando copies la ruta de la carpeta, pondrá las barras hacia la izquierda. Tienes que cambiarlas a mano y ponerlas hacia la derecha. 
 
+Cuando estemos listos, podemos ejecutar esa línea. No olvides guardar el programa de vez en cuando. Si todo va bien, R no te dirá nada. R es como uno de esos padres que solo dice las cosas malas que haces. Si lo haces bien, no te anima. Solo te regaña si te equivocas. Así que te animo yo: ¡¡ oléeeee !!
 
+#### Importación a R de la tabla de datos
 
-*Pregunta*
+Ahora debemos transformar el archivo de datos en una tabla propia de R. Esto implica que R traduce el csv a su lenguaje propio y mantiene su contenido en la memoria. De esa forma se puede acceder a los datos de manera más rápida. Procedemos de la siguiente forma:
 
-Una vez resuelto el asunto del directorio de trabajo, retomamos el hilo que muestra ChatGPT antes de preguntar por esto
+```{R}
+# Importar tabla de datos
+datos <- read.csv("alturas_encinas.csv", header = TRUE, sep = ";", dec = ",")
+```
 
-*Respuesta*
++ `datos` es el nombre del objeto que se creará dentro de R al importar el csv. Contendrá la información del csv.
++ `<-` significa "equivalente a"
++ `read.csv` es una función propia de R (parecido a nuestros verbors) que tiene la capacidad de leer archivos csv y de traducirlos al lenguaje R. Esta función tiene varios parámetros. Al igual que nuestros verbos tienen complementos, las funciones de R tienen parámetros y hay que usarlos bien para que el verbo (= la función) tenga sentido:
+  + `altura_encinas.cs` es el nombre del archivo que vamos a importar. Como ya hemos establecido el directorio de trabajo, basta con mencionar el nombre del archivo que queremos que cargue en memoria.
+  + `header` es un atributo que nos permite indicar si el csv tiene una primera línea que se usa para nombrar los campos que contiene. Si el csv tiene un encabezado en esa primera línea, debemos indicar que *header = TRUE*. Si no, decimos aquí *FALSE*.
+  + `sep` significa separador de campos. Nos permite indicar qué carácter se usa en el csv para separar los campos. Dependiendo del archivo que tengas puede ser el ; o ,. 
+  +`dec` nos permite indicar qué carácter dentro del csv se usa para separar los decimales. En el caso del ejemplo es la coma. 
 
-Ahora, usamos `ggplot2` para crear el histograma. Podemos ajustar el tamaño de las barras (bins) según necesites para una mejor visualización. Observa que, en el código de abajo, el tamaño de las barras es de 1 m. Tendrás que cambiar esto en el caso de que las especies medidas sean mucho más pequeñas o mucho más grandes:
+Cuando ejecutemos esta línea, veremos en Rstudio en el panel de la derecha un objeto llamado `datos`. Si hacemos click sobre él podremos ver su contenido. Si estás trabajando con R no obtendrás ningún mensaje si todo va bien. Si quieres comprobar que se ha cargado bien el archivo, puedes poner en la consola (o en tu programa) la función:
 
-```R
+```{R}
+# visualizamos la tabla. Esto es útil sobre todo para los que no usan RStudio
+View(datos)
+```
+#### Creación del histograma
+Cuando preguntamos a la IA cómo generar un histograma, nos sugiere usar un paquete llamado `ggplot2`. Antes de entrar en el detalle sobre cómo hacerlo, veamos qué es un paquete.
+
+El R que instalamos en nuestro ordenador tiene un gran número de funciones. Es decir, puede hacer muchas cosas. Pero, dado que se trata de software libre, los usuarios pueden crear nuevas funcionalidades. Esto hace que haya distintas soluciones para hacer una misma cosa o que se puedan crear nuevas funciones no existentes previamente. Estas funciones, diseñadas para hacer cosas específicas, se almacenan en *paquetes*. Un paquete es un conjunto de funciones que dan capacidad a R de hacer nuevas cosas. 
+
+Los paquetes se descargan gratuitamente de un repositorio de paquetes que mantiene la empresa que genera R. Para poder usarlos hay que instalarlos primero (una sola vez) y cargarlos en memoria cada vez que queremos usarlos. La instalación es algo equivalente a comprar un libro. Cargarlo en memoria es como leerlo. Si ya lo has comprado una vez (= instalar el paquete), ya no tienes que comprarlo más. Solo tienes que volver a leerlo (cargarlo en memoria). El siguiente código instala y carga el paquete en memoria. Tendremos que ejecutar las dos líneas la primera vez que lo usemos pero solo la segunda las siguientes veces.
+
+```{R}
+#Instalar y cargar paquetes
+install.packages("ggplot2")
+library(ggplot2)
+```
++ `install.packages` es la función que se usa para instalar paquetes. El atributo que tien muestra el nombre del paquete entre comillas. 
++ `library` es una función que carga en memoria el paquete que se muestra entre paréntesis a continuación`
+
+El paquete `ggplot2`sirve para generar gráficas de muchos tipos.
+
+Una vez cargado el paquete en memoria, podemos aplicar la función específica del paquete ggplot que genera un histograma. La sintaxis es la siguiente (nos la chiva la IA):
+
+```{R}
+# Crear el histograma
 ggplot(datos, aes(x = Altura)) +
   geom_histogram(binwidth = 1, fill = "blue", color = "black") +
   ggtitle("Distribución de Alturas de la Especie") +
   xlab("Altura (metros)") +
   ylab("Frecuencia")
 ```
-
 En este código:
 - `aes(x = Altura)`: Define `Altura` como la variable para el eje x.
-- `geom_histogram()`: Crea el histograma con 20 barras (ajusta el número con `bins` según el rango y dispersión de tus datos).
+- `geom_histogram()`: Crea el histograma con 20 barras (ajusta el número con `bins` según el rango y dispersión de tus datos. En el ejemplo el tamaño es 1).
 - `fill` y `color`: Colorean las barras y sus bordes.
 - `ggtitle()`, `xlab()`, y `ylab()`: Añaden título y etiquetas a los ejes.
 
-Simplemente ejecuta el código en R para ver el histograma. Si no estás usando RStudio y quieres guardar el gráfico en un archivo, puedes usar `ggsave()`:
+Simplemente ejecuta el código en R para ver el histograma. Si no estás usando RStudio y quieres guardar el gráfico en un archivo, el código cambia ligeramente porque almacenamos el gráfico en un objeto llamado `grafico`. Luego ese objeto se guarda en una imagen llamada `histograma_alturas.png`. El código en este caso sería así:
 
-```R
-ggsave("histograma_alturas.png", plot = última_plot(), width = 10, height = 8, dpi = 300)
+```{R}
+# Crear el histograma. Se almacena en un objeto llamado "grafico"
+grafico<-ggplot(datos, aes(x = Altura)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  ggtitle("Distribución de Alturas de la Especie") +
+  xlab("Altura (metros)") +
+  ylab("Frecuencia")
+
+# Guardamos la gráfica en un archivo png
+ggsave("histograma_alturas.png", plot = grafico, width = 10, height = 8, dpi = 300)
 ```
 
-Este código guarda el último gráfico realizado en un archivo PNG con una resolución de 300 dpi.
+Para facilitar vuestro trabajo, he preparado el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. Como algunos trabajáis con RStudio y otros no (gentileza de la UCO), os paso dos versiones diferentes del código adaptado a cada situación:
++ [Código si no usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_sin_RStudio.zip)
++ [Código si sí usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_con_RStudio.zip)
 
-Si estás usando RStudio, puedes exportar la gráfica directamente dándole al botón exportar de dicho programa. 
-
-
-*Aprendizajes*
-+ Hemos aprendido algunas normas del lenguaje R: establecer el directorio de trabajo, importar una tabla en formato csv, entender la mecánica de la función de `ggpplot2`que genera histogramas, etc.
-+ Para facilitar vuestro trabajo, he preparado el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. Como algunos trabajáis con RStudio y otros no (gentileza de la UCO), os paso dos versiones diferentes del código adaptado a cada situación:
-  + [Código si no usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_sin_RStudio.zip)
-  + [Código si sí usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_con_RStudio.zip)
-+ Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos sin RStudio y otro con esta aplicación.
+Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos sin RStudio y otro con esta aplicación.
 
 
 
