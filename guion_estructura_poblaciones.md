@@ -252,7 +252,8 @@ ggplot(datos, aes(x = Altura)) +
 ```
 En este código:
 - `aes(x = Altura)`: Define `Altura` como la variable para el eje x.
-- `geom_histogram()`: Crea el histograma con 20 barras (ajusta el número con `bins` según el rango y dispersión de tus datos. En el ejemplo el tamaño es 1).
+- `geom_histogram()`: Crea el histograma.
+- El número de barras del histograma depende de su anchura. Esto se modela con el argumento `binwidth` que representa la anchura de cada banda en las unidades de la variable utilizada. En nuestro caso, si estamos trabajando con tamaños de árboles y estos van de 0 a 20 metros, tendremos que elegir una anchura de banda en función de esos valores de altura. Si ponemos 0.5 m de anchura, estaremos pidiéndole a R que agrupe los datos de la tabla en clases de 0.5 m de altura. Es decir, creará una banda para árboles de 0 a 0.5 m, otra de 0.5 a 1 m, etc. Seguramente para organismos tan grandes tendría más sentido usar un tamaño de 1 o 2 metros. Si, por el contrario estamos trabajando con organismos pequeños, tendremos que usar anchuras de banda más pequeñas. 
 - `fill` y `color`: Colorean las barras y sus bordes.
 - `ggtitle()`, `xlab()`, y `ylab()`: Añaden título y etiquetas a los ejes.
 
