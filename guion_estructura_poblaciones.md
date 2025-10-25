@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Dos sesiones de 2 horas cada una. Alguna hora más en casa. 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/portada.png)
 
 
 
@@ -37,7 +37,7 @@ La siguiente figura muestra, de manera resumida, los distintos ecosistemas con l
 
 
 
-![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/esquema_gradiente_alturas.png)
+![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/esquema_gradiente_alturas.png)
 
 
 
@@ -77,7 +77,7 @@ Para entender bien qué es un histograma, podéis ver este de aquí:
 
 
 
-![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/rug_plot.png)
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/rug_plot.png)
 
 
 En él se representan las barras del histograma, pero también los valores concretos de la medida que estamos caracterizando para cada uno de los elementos del grupo. Si estamos representando el tamaño de una serie de árboles, el eje X representa las clases de tamaño (a la izquierda los más bajos) y el eje Y representa cuántos árboles de cada clase hay. Las líneas coloreadas que hay en el eje X representan los valores de las medidas concretas de cada árbol. De esta forma vemos cómo se distribuyen los tamaños en la población. A esta gráfica se le llama "rug plot". El color de cada línea es aleatorio.
@@ -92,8 +92,8 @@ Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el p
 
 En los siguientes enlaces tienes información sobre flujos de trabajo. Recomiendo su lectura:
 
-+ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
-+ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024_2025/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
++ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
++ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
 
 ### Las tablas de datos
 En nuestras pesquisas por internet, observamos que los datos que usaremos para generar el histograma se almacenan en tablas. Es una oportunidad estupenda para definir esta "entidad". Una tabla es un objeto (casi siempre digital) que nos permite caracterizar (= describir con detalle) elementos del mismo tipo. Por ejemplo, si queremos ordenar nuestra colección de libros o de CDs (¿sigue habiendo CDs?), almacenaremos la información en una tabla. Las tablas constan de filas y columnas. Las columnas representan los descriptores o características que usamos para describir los objetos (ej. título del libro, número de páginas, género del libro, etc.). Las filas son los elementos caracterizados. Es decir, en cada fila hay uno de los objetos descritos.
@@ -102,7 +102,7 @@ Las tablas son los elementos fundamentales que usamos para almacenar informació
 
 Dejo aquí uno de los garabatos que pintamos en la pizarra para describir una tabla. Por si es útil.
 
-![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/heads/main/imagenes/tabla.png)
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/tabla.png)
 
 ### ¿De dónde sacamos los datos?
 
@@ -112,7 +112,7 @@ La respuesta corta a la pregunta es que yo os daré esos datos. Más abajo tené
 
 La respuesta larga es que esos datos proceden de inventarios florísticos y forestales:
 
-Un inventario forestal es un proceso sistemático de recopilación y análisis de datos sobre los recursos forestales de una determinada área. Este inventario incluye información sobre la cantidad, calidad, distribución y estado de los árboles y otras especies vegetales leñosas. Los datos obtenidos permiten conocer la estructura del bosque (como la densidad, el diámetro y la altura de los árboles) y su funcionamiento, ya que facilitan la evaluación de aspectos como la regeneración, la productividad y la dinámica de los ecosistemas forestales. En la mayoría de los países se realizan inventarios forestales con cierta periodicidad. En España disponemos del [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html) en el que se repite la captura de datos de cada punto con una periodicidad de unos 10 años. [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/presentacion/inventarios_forestales.pptx) tienes algo más de información sobre los inventarios forestales. Por otro lado, un inventario florístico consiste en la identificación y registro de todas las especies de plantas presentes en un área específica, abarcando tanto especies leñosas como herbáceas. Este tipo de inventario proporciona información detallada sobre la composición y diversidad vegetal, lo que permite analizar la estructura de la comunidad vegetal y comprender el funcionamiento del ecosistema, incluyendo las relaciones ecológicas y los procesos que mantienen la biodiversidad. Ambos inventarios son herramientas fundamentales para entender cómo se organizan y funcionan los ecosistemas.
+Un inventario forestal es un proceso sistemático de recopilación y análisis de datos sobre los recursos forestales de una determinada área. Este inventario incluye información sobre la cantidad, calidad, distribución y estado de los árboles y otras especies vegetales leñosas. Los datos obtenidos permiten conocer la estructura del bosque (como la densidad, el diámetro y la altura de los árboles) y su funcionamiento, ya que facilitan la evaluación de aspectos como la regeneración, la productividad y la dinámica de los ecosistemas forestales. En la mayoría de los países se realizan inventarios forestales con cierta periodicidad. En España disponemos del [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html) en el que se repite la captura de datos de cada punto con una periodicidad de unos 10 años. [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2025_2026/presentacion/inventarios_forestales.pptx) tienes algo más de información sobre los inventarios forestales. Por otro lado, un inventario florístico consiste en la identificación y registro de todas las especies de plantas presentes en un área específica, abarcando tanto especies leñosas como herbáceas. Este tipo de inventario proporciona información detallada sobre la composición y diversidad vegetal, lo que permite analizar la estructura de la comunidad vegetal y comprender el funcionamiento del ecosistema, incluyendo las relaciones ecológicas y los procesos que mantienen la biodiversidad. Ambos inventarios son herramientas fundamentales para entender cómo se organizan y funcionan los ecosistemas.
 
 
 
@@ -123,22 +123,22 @@ Un inventario forestal es un proceso sistemático de recopilación y análisis d
 
 Empezamos la sesión descargando las tablas de datos que usaremos para generar el histograma. Yo he preparado las tablas necesarias en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
-+ **Pinares de repoblación:** [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
++ **Pinares de repoblación:** [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. En este segundo caso tendrán que modificar ligeramente el código de R para filtrar por especie en la tabla. ChatGPT y yo estaremos encantados de ayudar en esto :)
   + Altura: se muestra la altura en metros del árbol medido.
-+ **Encinares: **[alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
++ **Encinares: **[alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. En todos los casos la especie es *Quercus ilex*.
   + Altura: se muestra la altura en metros del árbol medido.
-+ **Robledales: **[Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/alturas_robles.zip). Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
-+ **Enebrales-piornales: **[Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2024_2025/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
++ **Robledales: **[Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_robles.zip). Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
++ **Enebrales-piornales: **[Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2025_2026/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
   + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
   + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
-+ **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
++ **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
   + Especie: en este caso todos los registros tienen el valor de *Populus*.
   + Altura_m: indica la altura en metros de cada árbol.
-+ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinales*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
-+ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
-+ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/main/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
++ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinales*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
++ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
++ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
 
 
 
@@ -152,13 +152,13 @@ Como en casi todos los lenguajes de programación, en R se suele trabajar usando
 
 + Los alumnos que trabajen en los ordenadores de la UCO tendrán que usar directamente R en modo consola. Para trabajar con el script que crearemos usarán la aplicación Notepad+ que mostrará las líneas de código que vamos a ir obteniendo de ChatGPT. A la derecha (en Notepad+) iremos creando el programa y a la izquierda iremos copiando y pegando las líneas para ir ejecutándolo paso a paso.  Su pantalla deberá de tener un aspecto parecido a esto:
 
-![R_UCO](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/entorno_UCO.png)
+![R_UCO](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/entorno_UCO.png)
 
 + Otra opción para los que no tienen RStudio consiste en crear un script (programa) desde el mismo R. Esto les facilitará un poco las cosas.
 
 + Los estudiantes que usen su ordenador podrán trabajar con RStudio, que tiene una interfaz como se muestra en la imagen posterior. En el cuadrante superior izquierdo iremos creando el programa que se irá ejecutando línea a línea en el terminal que hay en el cuadrante inferior izquierdo. Conforme vayamos creando datos y tablas, se mostrarán en el cuadrante de arriba a la derecha. Abajo a la derecha se mostrará finalmente el histograma. Para instalar R y RStudio hay que seguir las instrucciones que se indican en [esta](https://posit.co/download/rstudio-desktop/) página. Primero hay que instalar R (opción 1: install R) y luego RStudio (2: Install RSstudio)
 
-![RStudio](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2024-2025/imagenes/entorno_RStudio.png)
+![RStudio](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/entorno_RStudio.png)
 
 
 
@@ -272,8 +272,8 @@ ggsave("histograma_alturas.png", plot = grafico, width = 10, height = 8, dpi = 3
 ```
 
 Para facilitar vuestro trabajo, he preparado el script (=programa) completo que tenéis que ejecutar para generar el histograma. Solo tenéis que cambiar la ruta de acceso al archivo con los datos, el tamaño de la barra y los nombres de los archivos importados en función del ecosistema con el que estéis trabajando. Como algunos trabajáis con RStudio y otros no (gentileza de la UCO), os paso dos versiones diferentes del código adaptado a cada situación:
-+ [Código si no usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_sin_RStudio.zip)
-+ [Código si sí usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2024-2025/geoinfo/crear_histograma_con_RStudio.zip)
++ [Código si no usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/crear_histograma_sin_RStudio.zip)
++ [Código si sí usas RStudio.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/crear_histograma_con_RStudio.zip)
 
 Además, a continuación puedes ver dos vídeos en los que yo hago todo el proceso paso a paso. Uno de ellos sin RStudio y otro con esta aplicación.
 
@@ -310,7 +310,7 @@ Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Est
 
 ****
 
-[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/archive/refs/tags/2024-2025.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/archive/refs/tags/2025_2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
 
