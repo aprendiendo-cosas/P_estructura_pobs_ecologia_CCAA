@@ -1,16 +1,22 @@
 # Analizando la estructura de las poblaciones más importantes de los ecosistema de Sierra Nevada
 
 > + **_Tipo de material_**: <span style="display: inline-block; font-size: 12px; color: white; background-color: #4caf50; border-radius: 5px; padding: 5px; font-weight: bold;"> Prácticas</span> 
-> + **_Versión_**: 2025-2026
+> + **_Versión_**: 2026-2027
 > + **_Asignatura (grado)_**: Ecología (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
-> + **_Duración_**: Dos sesiones de 2 horas cada una. Alguna hora más en casa. 
+> + **_Duración_**: Tres sesiones de 2 horas cada una. Alguna hora más en casa. 
 
 ![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/portada.png)
 
 
 
-## Objetivos 
+[TOC]
+
+---
+
+
+
+## 1 Objetivos 
 
 Como todas las actividades de la asignatura, esta práctica tiene dos tipos de objetivos:
 
@@ -27,7 +33,7 @@ Como todas las actividades de la asignatura, esta práctica tiene dos tipos de o
 
 
 
-## Contextualización ecológica del problema
+## 2 Contextualización ecológica del problema
 
 Para lograr los anteriores objetivos de aprendizaje plantearemos un problema a resolver. Se trata de caracterizar la estructura de cada uno de los ecosistemas que cada estudiante tiene asignado y que visitaremos en Sierra Nevada. Concretamente usaremos un descriptor que estudiamos en los primeros días de clase: diagramas rango-edad o pirámides poblacionales. Son esquemas que nos dan idea de cuándos individuos de qué tamaño o edad hay en una población determinada. Como vimos en teoría, esos diagramas nos ayudan a entender también cómo funciona la población con relación a la reproducción. Y esto es importante para estimar o inferir posibles problemas que afecten a la población. Una población de una especie cualquiera en la que no hay regeneración tendrá una pirámide poblacional con muy pocos individuos jóvenes. Esto pone en peligro su supervivencia en el corto y medio plazo.
 
@@ -42,12 +48,12 @@ La siguiente figura muestra, de manera resumida, los distintos ecosistemas con l
 
 
 
-## Metodología docente propuesta
+## 3 Metodología docente propuesta
 Esta práctica es, seguramente, la más compleja que tendremos durante la asignatura. Y lo es por tres razones:
 
 + Los objetivos docentes que nos planteamos son ambiciosos. Pero esto no es lo más complejo.
-+ Vamos a tratar de cumplir nuestro objtetivo (generar un histograma para cada tipo de ecosistema) usando la "ingeniería inversa". Caracterizaremos un histograma e iremos dando pasos hacia atrás para tratar de aprender cómo se construye uno. Esto es habitual cuando uno se enfrenta a algo completamente nuevo. Aprenderemos esta técnica que será muy útil en vuestro desempeño profesional.
-+ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Procederé como si fuera uno de vosotros. Simularé que no sé hacer el trabajo y, juntos, aprendremos a hacerlo. Es decir, avanzaremos en clase con la siguiente premisa: ¿qué haría yo (51 años) si tuviera el conocimiento de mis estudiantes y acceso a las mismas herramientas y datos que ellos?
++ Vamos a tratar de cumplir nuestro objetivo (generar un histograma para cada tipo de ecosistema) usando la "ingeniería inversa". Caracterizaremos un histograma e iremos dando pasos hacia atrás para tratar de aprender cómo se construye uno. Esto es habitual cuando uno se enfrenta a algo completamente nuevo. Aprenderemos esta técnica que será muy útil en vuestro desempeño profesional.
++ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Procederé como si fuera uno de vosotros. Simularé que no sé hacer el trabajo y, juntos, aprendremos a hacerlo. Es decir, avanzaremos en clase con la siguiente premisa: ¿qué haría yo si tuviera el conocimiento de mis estudiantes y acceso a las mismas herramientas y datos que ellos?
 
 Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 
@@ -56,17 +62,22 @@ Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 - Mejora en la transferibilidad a situaciones reales. Si aprendemos bien el método que propongo aquí, os resultará más fácil transferirlo a otras situaciones (por ejemplo, a vuestro TFG, para el que no falta tanto tiempo...).
 - Mejora en la retención del conocimiento. Dicen que Confucio dijo algo así: *Me lo contaron y lo olvidé; lo vi y lo entendí; lo hice y lo aprendí*. Así que, según parece, nuestro cerebro retiene más eficazmente la información si pone en práctica el nuevo conocimiento adquirido. 
 
-Para conseguir lo anterior nos apoyaremos en las herramientas IAs que conocimos en la práctica anterior. A partir de sus respuestas iremos elaborando un flujo de trabajo que nos permitirá crear nuestro histograma. Además, yo explicaré algunas cuestiones concretas. 
+Para conseguir lo anterior dividiremos la práctica en tres sesiones diferentes. En la primera entenderemos de forma semi-dirigida lo que queremos conseguir, así como el tipo de datos que necesitamos para ello. Al final de la primera sesión dispondremos de un flujo de trabajo que nos permitirá describir lo que queremos hacer. En la segunda sesión llevaremos dicho flujo de trabajo teórico a la práctica. Se transformará en una serie de instrucciones de R que podremos ejecutar. Esta segunda sesión se realizará con el apoyo de IAs generativas. En la última sesión aplicaremos el código generado a nuestro ecosistema. También discutiremos los resultados ecológicos obtenidos para cada ecosistema y los compararemos entre sí. 
 
 
-
-## Primera sesión de la práctica
-En el primer día de esta práctica intentamos recopilar información sobre lo que necesitamos hacer sin ningún tipo de ayuda por parte del profesor. Me limito a comentar algunas de las ideas que surgen cuando los estudiantes buscan en internet, preguntan a las IAs y reflexionan por sí mismos y mismas.
-
-A continuación se aporta algo de información sobre los conceptos más relevantes que salen a relucir:
+## 4. Primera sesión: entender lo que queremos hacer
 
 
+### 4.1 Objetivos
 
++ Entender qué es un histograma de frecencias y su relación con la estructura del ecosistema.
++ Aprender qué es una tabla y cuál es su utilidad para almacenar información.
++ Conocer el concepto de inventario forestal-florístico y la estructura de datos asociada.
++ Aprender el concepto de flujo de trabajo.
++ Construir un flujo de trabajo para conseguir nuestro objetivo.
+
+
+---
 ### ¿Qué es un histograma?
 
 Parecía obvio que teníamos que entender bien qué es un histograma. A pesar de haberlos estudiado en varias asignaturas (la última vez hace menos de un año en estadística...), no tenemos claro qué es. Así que, buscamos en internet.
@@ -81,7 +92,6 @@ Para entender bien qué es un histograma, podéis ver este de aquí:
 
 
 En él se representan las barras del histograma, pero también los valores concretos de la medida que estamos caracterizando para cada uno de los elementos del grupo. Si estamos representando el tamaño de una serie de árboles, el eje X representa las clases de tamaño (a la izquierda los más bajos) y el eje Y representa cuántos árboles de cada clase hay. Las líneas coloreadas que hay en el eje X representan los valores de las medidas concretas de cada árbol. De esta forma vemos cómo se distribuyen los tamaños en la población. A esta gráfica se le llama "rug plot". El color de cada línea es aleatorio.
-
 
 
 ### Flujo de trabajo
@@ -115,9 +125,20 @@ La respuesta larga es que esos datos proceden de inventarios florísticos y fore
 Un inventario forestal es un proceso sistemático de recopilación y análisis de datos sobre los recursos forestales de una determinada área. Este inventario incluye información sobre la cantidad, calidad, distribución y estado de los árboles y otras especies vegetales leñosas. Los datos obtenidos permiten conocer la estructura del bosque (como la densidad, el diámetro y la altura de los árboles) y su funcionamiento, ya que facilitan la evaluación de aspectos como la regeneración, la productividad y la dinámica de los ecosistemas forestales. En la mayoría de los países se realizan inventarios forestales con cierta periodicidad. En España disponemos del [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html) en el que se repite la captura de datos de cada punto con una periodicidad de unos 10 años. [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2025_2026/presentacion/inventarios_forestales.pptx) tienes algo más de información sobre los inventarios forestales. Por otro lado, un inventario florístico consiste en la identificación y registro de todas las especies de plantas presentes en un área específica, abarcando tanto especies leñosas como herbáceas. Este tipo de inventario proporciona información detallada sobre la composición y diversidad vegetal, lo que permite analizar la estructura de la comunidad vegetal y comprender el funcionamiento del ecosistema, incluyendo las relaciones ecológicas y los procesos que mantienen la biodiversidad. Ambos inventarios son herramientas fundamentales para entender cómo se organizan y funcionan los ecosistemas.
 
 
+---
 
 
-## Segunda sesión de la práctica
+## 5. Segunda sesión: procesar datos para obtener lo que queremos
+
+### 5.1 Objetivos
+
++ Aprender algunas nociones básicas de R
++ Construir un script para generar un histograma con el apoyo de una IA. Es decir, transformar el flujo de trabajo anterior en un código ejecutable. Este objetivo se abordará mediante demostración sincrónica en micro-bloque susando IA para encontrar la sintáxis de las funciones a usar en R.
+
+
+---
+
+
 
 ### Datos de partida
 
@@ -289,6 +310,24 @@ Además, a continuación puedes ver dos vídeos en los que yo hago todo el proce
 
 <iframe width="560" height="415" src="https://www.youtube.com/embed/tbUROSWrhdo?si=ZLuOJytT_9utx4So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+
+
+
+## 6. Tercera sesión: interpretación ecológica de los resultados
+
+### 6.1 Objetivos
+
++ Crear de manera autónoma un histograma para tus propios datos.
++ Ver cómo afectan ciertos cambios en el código al histograma.
++ Incorporar nuevas funciones al histograma (ej. rug plot para dar más información)
++ Discutir las implicaciones ecológicas de los histogramas obtenidos. Analizarlos de manera individual y luego comparar los resultados entre ecosistemas. Es decir, evaluar en qué medida se parecen y se diferencian los histogramas por ecosistema. 
+
+
+
+En el primer día de esta práctica intentamos recopilar información sobre lo que necesitamos hacer sin ningún tipo de ayuda por parte del profesor. Me limito a comentar algunas de las ideas que surgen cuando los estudiantes buscan en internet, preguntan a las IAs y reflexionan por sí mismos y mismas.
+
+A continuación se aporta algo de información sobre los conceptos más relevantes que salen a relucir:
 
 
 ### Interpretación de los resultados
