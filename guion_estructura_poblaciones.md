@@ -67,9 +67,18 @@ En esta práctica aplicaremos varias metodologías docentes. Quizás pienses que
 - Indagación guiada: consiste en que el profesor hace preguntas que guian la atención de los estudiantes hacia el siguiente eslabón causal del problema abordado. 
 - Modelado cognitivo: se trata de simular ante vosotros (aprendices) cómo los expertos se comportan cuando se enfrentan a un problema concreto. Yo actuaré como si fuera uno de vosotros para buscar ayuda en internet. 
 
-Para conseguir lo anterior dividiremos la práctica en tres sesiones diferentes. En la primera entenderemos de forma semi-dirigida lo que queremos conseguir, así como el tipo de datos que necesitamos para ello. Al final de la primera sesión dispondremos de un flujo de trabajo que nos permitirá describir lo que queremos hacer. En la segunda sesión llevaremos dicho flujo de trabajo teórico a la práctica. Se transformará en una serie de instrucciones de R que podremos ejecutar. Esta segunda sesión se realizará con el apoyo de IAs generativas. En la última sesión aplicaremos el código generado a nuestro ecosistema. También discutiremos los resultados ecológicos obtenidos para cada ecosistema y los compararemos entre sí. 
+Para conseguir lo anterior dividiremos la práctica en tres sesiones diferentes pero muy relacionadas. En la primera entenderemos de forma semi-dirigida lo que queremos conseguir, así como el tipo de datos que necesitamos para ello. Al final de la primera sesión dispondremos de un flujo de trabajo que nos permitirá describir lo que queremos hacer. En la segunda sesión llevaremos dicho flujo de trabajo teórico a la práctica. Se transformará en una serie de instrucciones de R que podremos ejecutar. Esta segunda sesión se realizará con el apoyo de IAs generativas. En la última sesión aplicaremos el código generado a nuestro ecosistema. También discutiremos los resultados ecológicos obtenidos para cada ecosistema y los compararemos entre sí. 
 
-[esquema que resume lo que haremos?]
+La siguiente figura representa cómo se organizará esta práctica
+
+
+
+
+
+
+
+
+
 [algo de lo que me ha dicho gemini para captar su atención]
 
 Las metodologías docentes descritas anteriormente explican por qué el guión no contiene mucha información a partir de aquí. O al menos no la contiene antes de la realización de la sesión. Si la idea es que trabajemos en clase, no tiene sentido que desvele aquí lo que vamos a hacer. Iré completando el guión conforme vayamos avanzando en las distintas sesiones de esta práctica.
