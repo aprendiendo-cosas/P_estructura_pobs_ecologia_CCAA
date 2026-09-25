@@ -53,7 +53,7 @@ Esta práctica es, seguramente, la más compleja que tendremos durante la asigna
 
 + Los objetivos docentes que nos planteamos son ambiciosos. Pero esto no es lo más complejo.
 + Vamos a tratar de cumplir nuestro objetivo (generar un histograma para cada tipo de ecosistema) usando la "ingeniería inversa". Caracterizaremos un histograma e iremos dando pasos hacia atrás para tratar de aprender cómo se construye uno. Esto es habitual cuando uno se enfrenta a algo completamente nuevo. Aprenderemos esta técnica que será muy útil en vuestro desempeño profesional.
-+ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Procederé como si fuera uno de vosotros. Simularé que no sé hacer el trabajo y, juntos, aprendremos a hacerlo. Es decir, avanzaremos en clase con la siguiente premisa: ¿qué haría yo si tuviera el conocimiento de mis estudiantes y acceso a las mismas herramientas y datos que ellos?
++ La última fuente de complejidad deriva de la forma en la que aprenderemos todo lo anterior. Yo, como profesor, no os daré instrucciones precisas sobre cómo proceder para satisfacer nuestro objetivo. Modelaremos en directo cómo un profesional de la ecología aobrda un problema desde cero: qué preguntas se hace, cómo busca información y cómo interactúa con una IA de forma crítica para llegar a una solución.
 
 Aunque sea complejo, esta aproximación docente tiene muchas ventajas:
 
@@ -73,31 +73,27 @@ La siguiente figura representa cómo se organizará esta práctica
 
 
 
+![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/esquema_general.jpg)
 
 
-
-
-
-
-[algo de lo que me ha dicho gemini para captar su atención]
 
 Las metodologías docentes descritas anteriormente explican por qué el guión no contiene mucha información a partir de aquí. O al menos no la contiene antes de la realización de la sesión. Si la idea es que trabajemos en clase, no tiene sentido que desvele aquí lo que vamos a hacer. Iré completando el guión conforme vayamos avanzando en las distintas sesiones de esta práctica.
+
 
 
 ## 4. Primera sesión. Del ecosistema a la pizarra: entender lo que queremos hacer
 
 
+
 ### 4.1 Objetivos
 
-+ Entender qué es un histograma de frecuencias y su relación con la estructura del ecosistema.
-+ Aprender qué es una tabla y cuál es su utilidad para almacenar información.
-+ Conocer el concepto de inventario forestal-florístico y la estructura de datos asociada.
-+ Aprender el concepto de flujo de trabajo.
-+ Construir un flujo de trabajo para conseguir nuestro objetivo.
+Deducir y diseñar de manera colaborativa en la pizarra un esquema lógico (flujo de trabajo) que nos permita evaluar la estructura de las poblaciones de especies relevantes de nuestros ecosistemas.
 
 
 
 ## 5. Segunda sesión. De la pizarra al ordenador: procesar datos para obtener lo que queremos
+
+
 
 ### 5.1 Objetivos
 
@@ -109,6 +105,8 @@ Las metodologías docentes descritas anteriormente explican por qué el guión n
 
 
 ## 6. Tercera sesión. Del dato al conocimiento ecológico: interpretación ecológica de los resultados
+
+
 
 ### 6.1 Objetivos
 
@@ -122,11 +120,15 @@ Las metodologías docentes descritas anteriormente explican por qué el guión n
 
 ****
 
-[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/archive/refs/tags/2025_2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/archive/refs/tags/2026_2027.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
 
 Haz click [aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
+
+---
+
+[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/blob/2026_2027/notas_imparticion_P_estructura_pobs_ecologia_CCAA.md) puedes ver las notas que tomó el profesor una vez que se impartió la clase.
 
 ****
 
