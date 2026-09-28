@@ -91,6 +91,10 @@ Deducir y diseñar de manera colaborativa en la pizarra un esquema lógico (fluj
 
 
 
+**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbyeUEBHQLcYgpZZv4Ntyz5Di7YGdtX07O24QrBXn2E0kYc9ogWEkMPU3wogCjOPsPzhdA/exec) preguntas antes de terminar la sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. 
+
+---
+
 ## 5. Segunda sesión. De la pizarra al ordenador: procesar datos para obtener lo que queremos
 
 
