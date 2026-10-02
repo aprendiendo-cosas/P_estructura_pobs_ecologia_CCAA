@@ -87,7 +87,146 @@ Las metodologías docentes descritas anteriormente explican por qué el guión n
 
 ### 4.1 Objetivos
 
-Deducir y diseñar de manera colaborativa en la pizarra un esquema lógico (flujo de trabajo) que nos permita evaluar la estructura de las poblaciones de especies relevantes de nuestros ecosistemas.
++ Entender qué es un histograma de frecencias y su relación con la estructura del ecosistema.
++ Aprender qué es una tabla y cuál es su utilidad para almacenar información.
++ Conocer el concepto de inventario forestal-florístico y la estructura de datos asociada.
++ Aprender el concepto de flujo de trabajo.
++ Construir un flujo de trabajo para conseguir nuestro objetivo.
+
+Para satisfacer estos objetivos procedemos dando los siguientes pasos:
+
+
+
+### 4.2 Definir claramente nuestro objetivo final: un histograma
+
+El texto mostrado a continuación es un resumen reeestructurado con lenguaje científico del proceso de indagación que seguimos en clase tras estas preguntas:
+
+> ¿Qué tipo de gráfica se ajusta a lo que necesitamos?
+>
+> ¿Qué es un histograma?
+
+
+
+El estudio cuantitativo de las comunidades ecológicas requiere caracterizar de forma rigurosa la estructura demográfica de las poblaciones dominantes o ingenieras del ecosistema, cuya arquitectura condiciona la dinámica de la comunidad. Para inferir patrones de regeneración, reclutamiento y senescencia, el objetivo final consiste en estimar y representar la distribución de frecuencias de variables biométricas continuas (tales como la clase de edad o el tamaño corporal/altura) asociadas a los individuos de una especie.
+
+Desde una perspectiva analítica, un histograma es una representación gráfica bidimensional en la que el eje de abscisas (X) delimita intervalos discretos de una variable métrica continua (denominados intervalos de clase o *bins*), mientras que el eje de ordenadas (Y) cuantifica la frecuencia —absoluta o relativa— de observaciones comprendidas en cada rango. Matemáticamente, el área de cada barra resulta estrictamente proporcional a la densidad o frecuencia de eventos muestrales contenidos en dicho intervalo.
+
+Es importante no confundir una distribución de frecuencias con una serie temporal o una gráfica de magnitudes agregadas (como la precipitación total mensual en milímetros o la facturación por mes). La variable de respuesta debe ser un conteo discreto de eventos u ocurrencias (p. ej., número de días de lluvia o número de individuos censados).
+
+En el ámbito forestal, si consideramos una población de encinas (*Quercus ilex*), los individuos presentes en el estrato exhiben un gradiente continuo de tamaños o edades: desde plántulas y brinzales hasta individuos maduros y árboles senescentes de gran porte. La elaboración del histograma introduce un desafío intrínseco de discretización: la necesidad de proyectar una variable continua (edad o diámetro) en clases discretas arbitrarias. Si la amplitud del intervalo es excesivamente estrecha, la distribución se atomiza y pierde capacidad de síntesis estadística; si es excesivamente amplia respecto a la esperanza de vida o variabilidad de la especie (p. ej., rangos de 50 años en taxones de ciclo corto), se anula la resolución informativa al colapsar todas las observaciones en una única barra.
+
+Asimismo, la delimitación de la población debe respetar la homogeneidad ecológica: mezclar gradientes ambientales contrastados —como comparar poblaciones de plantas situadas a 200 m frente a 2000 m de altitud, análogo a comparar variables antropométricas de poblaciones humanas genéticamente dispares como holandeses y bosquimanos sin estratificación— generaría distribuciones bimodales o artefactos estadísticos atribuibles a plasticidad fenotípica o adaptación local, enmascarando la verdadera estructura demográfica del sitio.
+
+Para entender bien qué es un histograma, podéis ver este de aquí:
+
+
+
+![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/rug_plot.png)
+
+
+En él se representan las barras del histograma, pero también los valores concretos de la medida que estamos caracterizando para cada uno de los elementos del grupo. Si estamos representando el tamaño de una serie de árboles, el eje X representa las clases de tamaño (a la izquierda los más bajos) y el eje Y representa cuántos árboles de cada clase hay. Las líneas coloreadas que hay en el eje X representan los valores de las medidas concretas de cada árbol. De esta forma vemos cómo se distribuyen los tamaños en la población. A esta gráfica se le llama "rug plot". El color de cada línea es aleatorio.
+
+
+
+## 4.3 Estructura de datos necesarios para generar el histograma: las tablas
+
+Para obtener la distribución empírica de una variable biológica, es indispensable disponer de un modelo de datos estructurado. En computación y análisis ecológico, el soporte fundamental es la estructura tabular o matriz de datos.
+
+Una tabla constituye un dispositivo formal diseñado para caracterizar unívocamente entidades homogéneas (= del mismo tipo. Es decir, en una tabla no podemos caracterizar sillas y personas porque tienen atributos diferentes para ser caracterizados) de la realidad física. Para garantizar la integridad de la base de datos, toda tabla debe satisfacer dos condiciones estructurales:
+
+1. **La fila (o tupla) como unidad indivisible e invariante (instancia):** Cada fila representa una entidad física discreta observada en el muestreo (en este contexto, un único individuo vegetal o animal). La identidad de la fila preserva la correspondencia de atributos entre sí. A diferencia del paradigma de hoja de cálculo convencional (como Microsoft Excel), donde la celda es tratada a menudo como una unidad disociable —lo que provoca errores críticos como ordenar columnas de forma asimétrica y quebrar la trazabilidad de la entidad—, en entornos científicos y sistemas de información geográfica (SIG) la tupla mantiene una integridad relacional estricta.
+2. **La columna como variable o atributo:** Representa una dimensión métrica o categórica homogénea compartida por todas las instancias (p. ej., especie, diámetro normal $d_{1.30}$, altura total, fecha de muestreo). No deben agregarse entidades dispares dentro de la misma estructura (como muebles y personas, o árboles individuales y valores agregados a escala de rodal), ya que no comparten el mismo espacio de atributos.
+
+Para construir el histograma demográfico de una sola especie, la estructura tabular mínima reducible requiere una única variable biométrica cuantitativa asociada a cada individuo:
+
+$$\text{Tabla} = \begin{pmatrix} \text{ID} & \text{Especie} & \text{Altura (m)} \\ 1 & \text{Q. ilex} & 3.0 \\ 2 & \text{Q. ilex} & 4.0 \\ 3 & \text{Q. ilex} & 1.5 \\ \vdots & \vdots & \vdots \end{pmatrix}$$
+
+Si el rodal objeto de estudio fuera mixto (p. ej., coocurrencia de *Pinus sylvestris* y *Quercus pyrenaica*), la adición de una variable categórica para la identidad taxonómica permite segmentar la tabla y derivar distribuciones de frecuencias específicas por taxón. Es decir, en este caso podríamos hacer un histograma para cada especie.
+
+
+
+## 4.4 Transformación de datos en una gráfica: el concepto de análisis o procesamiento de datos
+
+El paso desde los registros tabulados hasta la visualización sintética del histograma exige un proceso algorítmico de transformación y reducción de dimensionalidad. Partiendo de una nube continua de observaciones individuales no agregadas, el procedimiento computacional comprende dos operaciones fundamentales:
+
+1. **Agrupamiento por intervalos de clase:** Consiste en particionar el soporte de la variable cuantitativa X en k subintervalos contiguos, disjuntos y exhaustivos:
+
+$$I_i = [x_{\min} + (i-1)h, \; x_{\min} + ih) \quad \text{para } i = 1, \dots, k$$
+
+donde $h$ representa el ancho de banda (*bin width*). Este paso fija el umbral de resolución con el que se clasifica a cada individuo según su magnitud biométrica. La creación de estos intervalos se hará en la próxima sesión cuando trabajemos con R. Por ahora solo nos quedamos con el hecho de que se agrupan los intervalos en clases o columnas.
+
+2. **Agregación por recuento (Conteo de frecuencias):** Para cada intervalo $I_i$, se cuentan cuántos individuos de la tabla hay en cada uno de los intervalos definidos anteriormente.
+
+A partir de la tabla agregada resultante, que vincula cada clase de tamaño con su respectivo conteo, se proyectan las coordenadas cartesianas que determinan las dimensiones geométricas del histograma. Mediante esta lógica de «ingeniería inversa», se deduce que para obtener el gráfico no se requiere una ordenación exhaustiva simple, sino una regla sistemática de agrupación y recuento paramétrico.
+
+
+
+## 4.5 El origen de los datos que usaremos: inventarios forestales
+
+La matriz de datos brutos no es un constructo abstracto; deriva de protocolos normalizados de muestreo en campo. En el ámbito forestal y de ecología de comunidades, el levantamiento de inventarios ecológicos a escala de paisaje (como los implementados históricamente en observatorios de cambio global en macizos montañosos como Sierra Nevada) requiere conciliar la heterogeneidad territorial con la viabilidad logística y económica del trabajo de campo.
+
+El diseño de muestreo no puede depender de una cuadrícula espacial sistemática u homogénea indiscriminada: en terrenos orográficamente complejos, una malla rígida subrepresentaría los ecosistemas minoritarios o de ribera que ocupan una fracción reducida del territorio frente a grandes masas continuas de matorral o pinares de repoblación. Para corregir este sesgo se aplica un **muestreo estratificado ambientalmente**:
+
+- Mediante análisis geoespacial multicriterio en SIG, se cruzan capas temáticas independientes (tales como pisos bioclimáticos, litología, modelos edáficos y orientación).
+- El territorio se fragmenta en teselas homogéneas según las combinaciones de factores físicos.
+- La densidad de asignación de parcelas de muestreo se modula de modo que todos los estratos ambientales queden representados con un número mínimo de unidades muestrales, incrementando la intensidad de muestreo en tipologías singulares o raras.
+
+Una vez georreferenciadas las coordenadas de muestreo, el levantamiento en campo se ejecuta mediante parcelas fijas (típicamente cuadradas de $20 \times 20\text{ m}$ o circulares de radio variable). Desde el centro geométrico de la unidad muestral se determina la posición de cada individuo mediante brújula y distanciómetro/clinómetro (rumbo y distancia polar), registrándose variables dasométricas directas:
+
+- Diámetro normal ($d_{1.30}$).
+- Altura total y altura a la base de la copa.
+- Diámetro medio de proyección de copa.
+- Densidad de regeneración natural y cobertura del sotobosque.
+
+La integración de estas parcelas locales con fuentes masivas normalizadas (tales como el Inventario Forestal Nacional) permite disponer de bases de datos sólidas a partir de las cuales se extraen y curan los subconjuntos de datos tabulares (en formatos estándar como `.csv`) con los que se alimenta el flujo computacional.
+
+[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2025_2026/presentacion/inventarios_forestales.pptx) podéis ver la presentación que usamos para explicar los inventarios forestales. Un buen ejemplo de inventario forestal es el [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html)
+
+
+
+## 4.6 Poniendo todos los pasos en orden: flujo de trabajo
+
+La formalización de una secuencia analítica reproducible en ciencia ecológica se modela mediante el concepto de **flujo de trabajo** (*workflow*): una secuencia estructurada, determinista y ordenada de transformaciones y procesos algorítmicos que transfiere los datos desde su captación empírica hasta la obtención de productos de información sintetizados.
+
+El flujo de trabajo se representa mediante convenciones estandarizadas:
+
+- **Rectángulos:** Identifican estructuras de datos, fuentes tabulares o colecciones de registros (p. ej., `inventario_bruto.csv`, `tabla_agrupada`).
+- **Cilindros:** Representan almacenes relacionales de persistencia o bases de datos espaciales.
+- **Rombos:** Representan operaciones de decisión lógica o bifurcaciones condicionales.
+- **Flechas direccionales:** Indican el vector de transformación y transferencia secuencial de estados.
+
+Aplicando la lógica analítica desarrollada, el flujo de trabajo computacional para la caracterización demográfica adopta la siguiente secuencia:
+
+1. **Diseño y ejecución del muestreo estratificado:** Muestreo en campo y registro biométrico individual en parcelas dasométricas. Esto no lo hacemos aquí. Los datos que usaremos están aquí y yo los he modificado para utilizarlos.
+2. **Consolidación en soporte estructurado:** Exportación a archivo de texto plano delimitado por caracteres (`.csv`), con codificación estándar, ausencia de caracteres reservados en rutas y preservación de la fila como entidad de integridad.
+3. **Ingesta y preprocesamiento de datos:** Carga de la estructura tabular en el entorno computacional (R) e indexación por especies.
+4. **Agregación analítica:** Definición de anchos de clase ($h$), discretización de la variable continua (*binning*) y conteo de frecuencias por estrato. Esto lo haremos en la segunda sesión de esta práctica.
+5. **Generación gráfica y evaluación:** Renderizado del histograma de frecuencias e interpretación ecológica de la distribución (detección de cohortes, patrones de envejecimiento o cuellos de botella en la regeneración de la comunidad vegetal). Esto también se hará en la segunda sesión.
+
+Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el proceso de captura y análisis de la información ambiental. En esta sesión construiremos un flujo de trabajo para generar una gráfica. Pero la idea es que esta herramienta esté presente (de forma implícita) en las demás prácticas de la asignatura.
+
+En los siguientes enlaces tienes información sobre flujos de trabajo. Recomiendo su lectura:
+
++ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
++ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
+
+En la última práctica de la asignatura veremos con más detalle los flujos de trabajo.
+
+A continuación tienes un dibujo de cómo quedó el flujo de trabajo del GM-2 en esta sesión:
+
+![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/esquema_general.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
