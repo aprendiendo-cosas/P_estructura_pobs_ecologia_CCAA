@@ -128,7 +128,7 @@ En él se representan las barras del histograma, pero también los valores concr
 
 
 
-## 4.3 Estructura de datos necesarios para generar el histograma: las tablas
+### 4.3 Estructura de datos necesarios para generar el histograma: las tablas
 
 Para obtener la distribución empírica de una variable biológica, es indispensable disponer de un modelo de datos estructurado. En computación y análisis ecológico, el soporte fundamental es la estructura tabular o matriz de datos.
 
@@ -145,7 +145,7 @@ Si el rodal objeto de estudio fuera mixto (p. ej., coocurrencia de *Pinus sylves
 
 
 
-## 4.4 Transformación de datos en una gráfica: el concepto de análisis o procesamiento de datos
+### 4.4 Transformación de datos en una gráfica: el concepto de análisis o procesamiento de datos
 
 El paso desde los registros tabulados hasta la visualización sintética del histograma exige un proceso algorítmico de transformación y reducción de dimensionalidad. Partiendo de una nube continua de observaciones individuales no agregadas, el procedimiento computacional comprende dos operaciones fundamentales:
 
@@ -161,7 +161,7 @@ A partir de la tabla agregada resultante, que vincula cada clase de tamaño con 
 
 
 
-## 4.5 El origen de los datos que usaremos: inventarios forestales
+### 4.5 El origen de los datos que usaremos: inventarios forestales
 
 La matriz de datos brutos no es un constructo abstracto; deriva de protocolos normalizados de muestreo en campo. En el ámbito forestal y de ecología de comunidades, el levantamiento de inventarios ecológicos a escala de paisaje (como los implementados históricamente en observatorios de cambio global en macizos montañosos como Sierra Nevada) requiere conciliar la heterogeneidad territorial con la viabilidad logística y económica del trabajo de campo.
 
@@ -184,7 +184,7 @@ La integración de estas parcelas locales con fuentes masivas normalizadas (tale
 
 
 
-## 4.6 Poniendo todos los pasos en orden: flujo de trabajo
+### 4.6 Poniendo todos los pasos en orden: flujo de trabajo
 
 La formalización de una secuencia analítica reproducible en ciencia ecológica se modela mediante el concepto de **flujo de trabajo** (*workflow*): una secuencia estructurada, determinista y ordenada de transformaciones y procesos algorítmicos que transfiere los datos desde su captación empírica hasta la obtención de productos de información sintetizados.
 
@@ -222,7 +222,7 @@ Conforme nos desplazamos hacia la derecha en el flujo de trabajo vamos obteniend
 
 
 
-## 4.7 Enlaces para acceder a los datos y primera toma de contacto
+### 4.7 Enlaces para acceder a los datos y primera toma de contacto
 
 
 
