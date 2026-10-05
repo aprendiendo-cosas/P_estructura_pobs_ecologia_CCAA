@@ -214,15 +214,36 @@ En la última práctica de la asignatura veremos con más detalle los flujos de 
 
 A continuación tienes un dibujo de cómo quedó el flujo de trabajo del GM-2 en esta sesión:
 
-![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/esquema_general.jpg)
+![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/flujograma.jpg)
 
 
 
+Conforme nos desplazamos hacia la derecha en el flujo de trabajo vamos obteniendo resultados que se parecen más a lo que necesitamos. Pero al mismo tiempo esos resultados son cada vez menos útiles para otros usos. De alguna forma podemos decir que lo que hay a la izquierda del flujo de trabajo es "totipotente" (= podemos hacer muchas cosas con esos datos). Lo de la derecha (nuestros resultados) es una manifestación especializada y particular de esos datos. 
 
 
 
+## 4.7 Enlaces para acceder a los datos y primera toma de contacto
 
 
+
+Terminamos la sesión descargando las tablas de datos que usaremos para generar el histograma. Yo he preparado las tablas necesarias en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
+
++ **Pinares de repoblación:** [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
+  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. 
+  + Altura: se muestra la altura en metros del árbol medido.
++ **Encinares: **[alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
+  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. En todos los casos la especie es *Quercus ilex*.
+  + Altura: se muestra la altura en metros del árbol medido.
++ **Robledales: **[Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_robles.zip). Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
++ **Enebrales-piornales: **[Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2025_2026/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
+  + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
+  + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
++ **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
+  + Especie: en este caso todos los registros tienen el valor de *Populus*.
+  + Altura_m: indica la altura en metros de cada árbol.
++ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinalis*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
++ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
++ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
 
 
 
@@ -268,26 +289,7 @@ AQUÍ VAN LOS DATOS PARA QUE EMPEZEMOS A JUGAR
 
 
 
-### Datos de partida
-
-Empezamos la sesión descargando las tablas de datos que usaremos para generar el histograma. Yo he preparado las tablas necesarias en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
-
-+ **Pinares de repoblación:** [alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_pinus.zip). Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
-  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. En este segundo caso tendrán que modificar ligeramente el código de R para filtrar por especie en la tabla. ChatGPT y yo estaremos encantados de ayudar en esto :)
-  + Altura: se muestra la altura en metros del árbol medido.
-+ **Encinares: **[alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_encinas.zip). Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
-  + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. En todos los casos la especie es *Quercus ilex*.
-  + Altura: se muestra la altura en metros del árbol medido.
-+ **Robledales: **[Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_robles.zip). Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
-+ **Enebrales-piornales: **[Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2025_2026/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
-  + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
-  + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
-+ **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
-  + Especie: en este caso todos los registros tienen el valor de *Populus*.
-  + Altura_m: indica la altura en metros de cada árbol.
-+ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinales*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
-+ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
-+ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
+### 
 
 
 
