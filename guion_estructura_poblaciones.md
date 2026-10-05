@@ -238,9 +238,25 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
 + **Enebrales-piornales: **[Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/area_enebros.zip). Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2025_2026/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
   + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
   + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
-+ **Bosques de ribera: **[Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
-  + Especie: en este caso todos los registros tienen el valor de *Populus*.
-  + Altura_m: indica la altura en metros de cada árbol.
++ **Bosques de ribera: **Este año extenderemos parcialmente el estudio de este ecosistema a la componente acuática del mismo. Los estudiantes que lo deseen, podrán analizar los dos tipos de datos siguientes para caracterizar la estructura del ecosistema:
+  + Estructura de la población de árboles del bosque: [Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/Alturas_Populus.zip). En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
+    + Especie: en este caso todos los registros tienen el valor de *Populus*.
+    + Altura_m: indica la altura en metros de cada árbol.
+  + Estructura de tamaños de las truchas de varios ríos de Sierra Nevada. Este archivo contiene datos de varios censos de truchas realizados en tres ríos de Sierra Nevada: Genil (que está en la cuenca que visitaremos en la salida de campo), Monachil (que nace justo en la estación de esquí donde dormiremos en la salida) y Trevélez (al sur, en la Alpujarra). Todos los datos tienen la misma estructura:
+    + ID visita: código único para cada visita a cada estación de muestreo.
+    + Observador/a 1: persona que hace el muestreo
+    + Observador/a 2: persona que hace el muestreo
+    + Fecha inicio: pues eso, la fecha y hora en la que se inicia el muestreo. Hay datos desde 2008 hasta 2025. Esto quiere decir que se puede hacer un histograma para cada año y ver la evolución de la estructura poblacional en cada trayecto.
+    + Fecha fin:...
+    + ID Transecto: Código numérico del transecto (fragmento de río muestreado) en el que se hace la cuantificación.
+    + Transecto: Denominación textual del transecto muestreado.
+    + Observaciones: Comentarios hechos al muestreo.
+    + ID Registro: Código único que recibe cada trucha medida y pesada
+    + Longitud: longitud de la trucha en cm.
+    + Peso: Peso del pez en gramos
+    + Edad: Grupo de edad asignada al pez cuando se mide en campo.
+    + Edad asignada: edad asignada al pez tras analizar los datos.
+    + Factor de Fulton: indicador que describe el estado de salud de la trucha en cuestión. Se calcula combinando el peso del pez y su tamaño. Si este índice es cercano o superior a 1 se considera que el estado de salud de la trucha es excelente. Valores inferiores indican problemas como falta de alimento, contaminación, etc. Un valor bajo indica que la trucha pesa poco para su tamaño. 
 + **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinalis*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
 + **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
 + **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/2025_2026/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
