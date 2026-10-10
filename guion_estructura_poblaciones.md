@@ -263,7 +263,7 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
 
 
 
-**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. 
+<span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la primera sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
 
 ---
 
@@ -276,9 +276,97 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
 ### 5.1 Objetivos
 
 + Aprender algunas nociones básicas de R
-+ Construir un script para generar un histograma con el apoyo de una IA. Es decir, transformar el flujo de trabajo anterior en un código ejecutable. Este objetivo se abordará mediante demostración sincrónica en micro-bloque susando IA para encontrar la sintáxis de las funciones a usar en R.
++ Construir un script para generar un histograma con el apoyo de una IA. Es decir, transformar el flujo de trabajo anterior en un código ejecutable. Este objetivo se abordará mediante demostración sincrónica en micro-bloque usando IA para encontrar la sintáxis de las funciones a usar en R.
+
+### 5.2 Nociones generales de R y RStudio
+
+En esta fase final de la práctica vamos a preguntar a ChatGPT cómo se construye un histograma usando R. Pero antes de eso, os cuento por aquí algunas cosas generales de este lenguaje de programación.
+
+R es uno de los lenguajes de programación más usados en el ámbito científico. Tiene funciones para realizar análisis estadísticos, dibujar distintos tipos de gráficas, procesar información georreferenciada y muchas otras cosas más. Como cualquier lenguaje de programación, R se parece mucho a un idioma. Tiene sus normas (sintaxis), sus tipos de "palabras" (funciones, parámetros, etc.) y también tiene una forma particular de almacenar tipos de datos. En esta sección nos familiarizaremos un poco con algunos elementos de R. Iremos aprendiendo poco a poco usando algunas de sus funciones.
+
+Como en casi todos los lenguajes de programación, en R se suele trabajar usando la consola. Es esa pantalla negra que se usa frecuentemente en las películas de hackers en la que se escriben órdenes para que el ordenador trabaje. Este entorno de trabajo es un poco árido, por lo que se han desarrollado otros entornos que facilitan el trabajo porque aportan ventanas para visualizar los datos creados o importados, para ver los gráficos o para desplegar un programa (script) completo e ir ejecutándolo paso a paso (o a la vez). En nuestro caso usaremos una aplicación llamada RStudio. Es un entorno de desarrollo muy utilizado en R.
+
+Los estudiantes que usen su ordenador podrán trabajar con RStudio, que tiene una interfaz como se muestra en la imagen inferior. En el cuadrante superior izquierdo iremos creando el programa que se irá ejecutando línea a línea en el terminal que hay en el cuadrante inferior izquierdo. Conforme vayamos creando datos y tablas, se mostrarán en el cuadrante de arriba a la derecha. Abajo a la derecha se mostrará finalmente el histograma.
+
+Para instalar R y RStudio hay que seguir los siguientes pasos:
+
+- Instalar R: Descarga la versión más reciente y ajusta a tu sistema operativo de [esta](https://cran.r-project.org/) página. Luego instala el ejecutable que se descarga.
+- Instalar RStudio: Descarga la última versión disponible de [esta](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads) página. Luego ejecuta el instalable. 
+
+Cuando tengamos el software instalado (en el caso de que uses tu ordenador), podemos empezar a programar. En el menú "file" seleccionamos la opción "new script". Esto genera un lienzo vacío arriba a la izquierda. En él iremos escribiendo las líneas de código en idioma R. En idioma humano, nuestro programa tendrá los siguientes pasos:
+
+1. Establecer el directorio de trabajo.
+2. Importar la tabla con los datos en formato csv
+3. Crear el histograma
+4. Exportar el histograma
+
+En esta sección aprenderemos las instrucciones de R que nos permitirán generar el histograma. Para ello iremos preguntando a ChatGPT, a Claude o a Gemini sobre cómo proceder. Como los promts que usamos son diferentes, no tiene mucho sentido reproducir aquí la conversación con las IAs. Solo pegaré el primer prompt que yo he usado para que os sirva de guía. A continuación describiré paso a paso las distintas líneas del programa que hemos creado en R para generar el histograma. 
+
+> Quiero aprender algo de R y de Rstudio. Para ello voy a empezar haciendo un histograma de frecuencias. Te iré preguntando cosas. No me contestes solo con la solución. Dame contexto, repreguntáme. Es decir, actúa como un tutor o copiloto de mi aprendizaje.
 
 
+
+### 5.3 Establecimiento del directorio de trabajo
+
+A continuación, preguntamos a una IA cómo se establece el directorio de trabajo:
+
+> Dime qué es y cómo se establece el directorio de trabajo en R
+
+A partir de la respuesta de R, vamos generando el siguiente código
+
+En R y en otros lenguajes de programación es importante indicar al principio en qué carpeta están los datos con los que trabajamos. Esto lo decimos al principio del programa y luego ya el software busca en esa carpeta siempre que necesita acceder a algo.
+
+Para establecer el directorio de trabajo usamos una función llamada *setwd*. La sintaxis es esta:
+
+```{R}
+# Establecemos el directorio de trabajo
+setwd("/tu/ruta")
+```
+Donde pone "/tu/ruta" debemos de poner la ruta a la carpeta donde están nuestros datos en el ordenador. Para ello hacemos lo siguiente:
++ Si tienes Mac ve a la carpeta usando Finder. Selecciona un archivo que haya en esa carpeta, dale al botón derecho y selecciona "Obtener información". Eso abrirá un menú en el que aparece la ruta. Copia la ruta y pégala directamente entre las comillas del código anterior.
++ Si usas un Windows:
+  + Ve al explorado de archivos y navega a la carpeta que te interesa.
+  + En la barra de arriba verás los nombres de las carpetas dentro de las que esté tu carpeta destino. Si hay, claro. 
+  + Haz click en la parte derecha de esa barra. Verás como la ruta se transforma en algo así: C:/carpeta/.... En los ordenadores de clase aparece algo así "//cifs/....". Copia esa cadena de texto.
+  + Pégala en tu programa entre las comillas.
+  + Ahora sustituye las barras \ por barras hacia la derecha: /. Windows va a su aire y pone las barras como quiere...
+
+
+Cuando estemos listos, podemos ejecutar esa línea. No olvides guardar el programa de vez en cuando. Si todo va bien, R no te dirá nada. R es como uno de esos padres que solo dice las cosas malas que haces. Si lo haces bien, no te anima. Solo te regaña si te equivocas. Así que te animo yo: ¡¡ oléeeee !!
+
+
+
+#### 5.4 Importación a R de la tabla de datos
+
+Ahora debemos transformar el archivo de datos en una tabla propia de R. Esto implica que R traduce el csv a su lenguaje propio y mantiene su contenido en la memoria. De esa forma se puede acceder a los datos de manera más rápida. Procedemos de la siguiente preguntando a una IA:
+
+> Ahora quiero importa a R un archivo con extensión csv que tiene como serparador de campos el punto y coma.
+
+De la respuesta obtenida, obtenemos lo siguiente:
+
+```{R}
+# Importar tabla de datos
+datos <- read.csv("alturas_encinas.csv", header = TRUE, sep = ";", dec = ",")
+```
+
++ `datos` es el nombre del objeto que se creará dentro de R al importar el csv. Contendrá la información del csv.
++ `<-` significa "equivalente a"
++ `read.csv` es una función propia de R (parecido a nuestros verbors) que tiene la capacidad de leer archivos csv y de traducirlos al lenguaje R. Esta función tiene varios parámetros. Al igual que nuestros verbos tienen complementos, las funciones de R tienen parámetros y hay que usarlos bien para que el verbo (= la función) tenga sentido:
+  + `altura_encinas.cs` es el nombre del archivo que vamos a importar. Como ya hemos establecido el directorio de trabajo, basta con mencionar el nombre del archivo que queremos que cargue en memoria.
+  + `header` es un atributo que nos permite indicar si el csv tiene una primera línea que se usa para nombrar los campos que contiene. Si el csv tiene un encabezado en esa primera línea, debemos indicar que *header = TRUE*. Si no, decimos aquí *FALSE*.
+  + `sep` significa separador de campos. Nos permite indicar qué carácter se usa en el csv para separar los campos. Dependiendo del archivo que tengas puede ser el ; o ,. 
+  +`dec` nos permite indicar qué carácter dentro del csv se usa para separar los decimales. En el caso del ejemplo es la coma. 
+
+Cuando ejecutemos esta línea, veremos en Rstudio en el panel de la derecha un objeto llamado `datos`. Si hacemos click sobre él podremos ver su contenido. Si estás trabajando con R no obtendrás ningún mensaje si todo va bien. Si quieres comprobar que se ha cargado bien el archivo, puedes poner en la consola (o en tu programa) la función:
+
+```{R}
+# visualizamos la tabla. Esto es útil sobre todo para los que no usan RStudio
+View(datos)
+```
+
+
+
+<span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas correspondientes a la segunda sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
 
 
 
@@ -292,6 +380,16 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
 + Ver cómo afectan ciertos cambios en el código al histograma.
 + Incorporar nuevas funciones al histograma (ej. rug plot para dar más información)
 + Discutir las implicaciones ecológicas de los histogramas obtenidos. Analizarlos de manera individual y luego comparar los resultados entre ecosistemas. Es decir, evaluar en qué medida se parecen y se diferencian los histogramas por ecosistema. 
+
+
+
+
+
+
+
+
+
+
 
 
 ****
