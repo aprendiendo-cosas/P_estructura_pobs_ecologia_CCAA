@@ -336,7 +336,7 @@ Cuando estemos listos, podemos ejecutar esa línea. No olvides guardar el progra
 
 
 
-#### 5.4 Importación a R de la tabla de datos
+### 5.4 Importación a R de la tabla de datos
 
 Ahora debemos transformar el archivo de datos en una tabla propia de R. Esto implica que R traduce el csv a su lenguaje propio y mantiene su contenido en la memoria. De esa forma se puede acceder a los datos de manera más rápida. Procedemos de la siguiente preguntando a una IA:
 
