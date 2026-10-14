@@ -461,6 +461,14 @@ Esto generará un archivo llamado `distribución_alturas.jpg` en tu carpeta de t
 
 
 
+En el siguiente vídeo podéis ver cómo yo completo el ejercicio:
+
+<iframe width="560" height="415" src="https://www.youtube.com/embed/tbUROSWrhdo?si=ZLuOJytT_9utx4So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
 ## 6. Tercera sesión. Del dato al conocimiento ecológico: interpretación ecológica de los resultados
 
 
@@ -472,7 +480,13 @@ Esto generará un archivo llamado `distribución_alturas.jpg` en tu carpeta de t
 + Incorporar nuevas funciones al histograma (ej. rug plot para dar más información)
 + Discutir las implicaciones ecológicas de los histogramas obtenidos. Analizarlos de manera individual y luego comparar los resultados entre ecosistemas. Es decir, evaluar en qué medida se parecen y se diferencian los histogramas por ecosistema. 
 
+### 6.2 Interpretación de los resultados
 
+Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Esto es lo que perseguimos, en realidad. Se trata de tratar de aprender algo sobre la estructura y funcionamiento del ecosistema en cuestión a partir del histograma de tamaños de la especie que lo domina. Para interpretar el histograma, sugiero dar los siguientes pasos:
+
+- En primer lugar es útil analizar asépticamente la gráfica. De esta manera podemos ver si hay pocos o muchos organismos pequeños (=jóvenes), de tamaño intermedio o grandes. Puede que la gráfica tenga forma de campana de Gauss (distribución normal) o de J inclinada, por poner dos ejemplos. Esta observación de la gráfica nos dará información sobre la abundancia relativa de individuos jóvenes y maduros y senescentes.
+- Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo.
+- Escribir un breve párrafo combinando la descripción "aséptica" anterior y su interpretación a la luz de las características de la especie analizada. 
 
 
 
