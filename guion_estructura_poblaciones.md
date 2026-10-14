@@ -485,8 +485,18 @@ En el siguiente vídeo podéis ver cómo yo completo el ejercicio:
 Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Esto es lo que perseguimos, en realidad. Se trata de tratar de aprender algo sobre la estructura y funcionamiento del ecosistema en cuestión a partir del histograma de tamaños de la especie que lo domina. Para interpretar el histograma, sugiero dar los siguientes pasos:
 
 - En primer lugar es útil analizar asépticamente la gráfica. De esta manera podemos ver si hay pocos o muchos organismos pequeños (=jóvenes), de tamaño intermedio o grandes. Puede que la gráfica tenga forma de campana de Gauss (distribución normal) o de J inclinada, por poner dos ejemplos. Esta observación de la gráfica nos dará información sobre la abundancia relativa de individuos jóvenes y maduros y senescentes.
-- Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo.
+- Analizar los resultados teniendo en cuenta la longevidad y las características de la especie analizada. Si tenemos una especie muy longeva (ej. *Juniperus communis*), el número reducido de juveniles es poco importante. Esto se debe a que, aunque haya pocos jóvenes en este momento, los adultos viven muchos años y pueden reproducirse durante más tiempo. En este paso es recomendable que preguntéis a una IA. Pero como siempre, no preguntéis por la solución. Preguntad por cosas que os ayuden a vosotros a generar un análisis válido. Nunca hay que delegar el pensamiento en la IA. Y la consulta siempre va después de la reflexión individual o grupal con otros humanos.
 - Escribir un breve párrafo combinando la descripción "aséptica" anterior y su interpretación a la luz de las características de la especie analizada. 
+
+A modo de ejemplo, interpretaré aquí el histograma mostrado abajo. Simularé que soy uno de vosotros:
+
+![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20081111_Genil.png)
+
+
+
+
+
+
 
 
 
