@@ -6,7 +6,7 @@
 * **Versión del acto docente:** [Versión 2026-2027](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/releases/tag/2026_2027)
 
 * **Dinámica y comprensión:**
-  - Sesión 1
+  - Sesión 1: del campo a la pizarra.
   
     - Mi percepción:
   
@@ -65,7 +65,7 @@
           2. **Brecha de conocimientos previos y herramientas:** La introducción de términos y aplicaciones no explicados en detalle o ajenos a su bagaje previo, citando expresamente la fuente de datos (**IFN**) y la herramienta de diagramación (**Draw.io**).
           3. **Interés en mayor profundización:** Deseo de entrar en mayor detalle analítico sobre la estructura de los datos con los que se trabaja.
   
-  - Sesión 2:
+  - Sesión 2: de la pizarra al ordenador. No terminamos esta parte en la segunda sesión, sino en la tercera.
   
     - Mi percepción:
       - GM-1:
@@ -80,9 +80,19 @@
       - GM-1
       - GM-2
   
+  - Sesión 3: dedicamos buena parte de la sesión a generar el código del histograma. Les digo que trabajen por su cuenta. 
+  
+    - GM1 y GM2: 
+      - En general va bastante bien.
+      - Se apoyan bien en la IA y generan resultados.
+      - Casi todos aprenden. 
+      - Veo a algunos más perdidos.
+      - Otros se vienen arriba y mejoran el código con ideas nuevas: línea con la media, rug plot, etc.
+      - Casi todos trabajan con la función hist de R Core. Sugiero que usen ggplot2.
+  
     
   
 * **Tareas / Ideas para el siguiente curso:**
-  - [ ] 
+  - [ ] Tratar de ajustar los tiempos para que en la tercera sesión dediquemos más tiempo a interpretar los histogramas. No ha dado tiempo a hacerlo esta vez.
   
   

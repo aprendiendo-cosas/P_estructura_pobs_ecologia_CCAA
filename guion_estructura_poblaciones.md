@@ -368,6 +368,89 @@ View(datos)
 
 
 
+### 5.5 Creación del histograma
+
+Cuando preguntamos a una IA cómo generar el histograma puede darnos, al menos, dos caminos ligeramente diferentes:
+
+#### 5.5.1 Uso de la función `hist()`
+
+Esta es la vía más fácil y también la que tiene menos opciones de personalización. La función `hist()` tiene una sintaxis muy sencilla:
+
+Pertenece al paquete base de R (`graphics`) y calcula e ilustra la distribución de frecuencias de un vector numérico continuo dividiendo el rango de valores en intervalos disjuntos.
+
+```{R}
+hist(x,
+     breaks = 6,
+     col    = "forestgreen",
+     border = "white",
+     main   = "Distribución de alturas",
+     xlab   = "Altura (m)",
+     ylab   = "Número de árboles")
+```
+
+**Argumentos principales**
+
+- **`x`**: Vector numérico con las observaciones continuas o discretas a graficar (requerido). En nuestro caso esto se corresponde con la tabla que contiene nuestros datos. Además del nombre de la tabla hay que indicar el campo del que queremos que R extraiga los datos. Eso se indica así: `nombre_tabla$nombre_campo`. Por ejemplo, `altura_pinos$altura`. El símbolo de dólar (`$`) significa algo así: ahora te diré el campo del que quiero que saques los datos.
+- **`breaks`**: Define los puntos de corte o el número de intervalos (*bins*). Acepta:
+  - Un número aproximado de intervalos (sugerencia para el algoritmo). Esto es importante. Esta función no permite indicar la anchura del intervalo, solo el número de intervalos. Y a nosotros nos resulta difícil saber *a priori* cuántos intervalos tendremos. Por esto esta función no da resultados muy buenos.
+  - Un vector numérico con los puntos de corte exactos (ej. `c(0, 10, 20, 50)`). Un vector es un conjunto de números. De esta forma le indicamos a R que genere los "bloques" con los tamaños indicados en el vector. Esto es difícil de parametrizar para nosotros ahora. 
+- **`col`**: Color de relleno de las barras (ej. `"skyblue"`, `"#336699"`).
+- **`border`**: Color del contorno de las barras (por defecto `"black"`).
+- **`main`**: Título principal del gráfico (cadena de texto).
+- **`xlab`** / **`ylab`**: Etiquetas de los ejes X e Y respectivamente.
+- **`xlim`** / **`ylim`**: Vectores de dos elementos que definen los límites numéricos de los ejes (ej. `xlim = c(0, 100)`).
+
+Cuando hayas generado el histograma de esta forma, tienes que darle a la opción de exportar de Rstudio (menú superior del recuadro de plots, abajo a la derecha) para generar un jpg o un pdf.
+
+
+
+#### 5.5.2 Uso de la función `ggplot` del paquete `ggplot2`
+
+Cuando preguntamos a la IA cómo generar un histograma, a veces nos sugiere usar un paquete llamado `ggplot2`. Antes de entrar en el detalle sobre cómo hacerlo, veamos qué es un paquete.
+
+El R que instalamos en nuestro ordenador tiene un gran número de funciones. Es decir, puede hacer muchas cosas. Pero, dado que se trata de software libre, los usuarios pueden crear nuevas funcionalidades. Esto hace que haya distintas soluciones para hacer una misma cosa o que se puedan crear nuevas funciones no existentes previamente. Estas funciones, diseñadas para hacer cosas específicas, se almacenan en *paquetes*. Un paquete es un conjunto de funciones que dan capacidad a R de hacer nuevas cosas. 
+
+Los paquetes se descargan gratuitamente de un repositorio de paquetes que mantiene la empresa que genera R. Para poder usarlos hay que instalarlos primero (una sola vez) y cargarlos en memoria cada vez que queremos usarlos. La instalación es algo equivalente a comprar un libro. Cargarlo en memoria es como leerlo. Si ya lo has comprado una vez (= instalar el paquete), ya no tienes que comprarlo más. Solo tienes que volver a leerlo (cargarlo en memoria). El siguiente código instala y carga el paquete en memoria. Tendremos que ejecutar las dos líneas la primera vez que lo usemos pero solo la segunda las siguientes veces.
+
+```{R}
+#Instalar y cargar paquetes
+install.packages("ggplot2")
+library(ggplot2)
+```
+
++ `install.packages` es la función que se usa para instalar paquetes. El atributo que tien muestra el nombre del paquete entre comillas. 
++ `library` es una función que carga en memoria el paquete que se muestra entre paréntesis a continuación`
+
+El paquete `ggplot2`sirve para generar gráficas de muchos tipos.
+
+Una vez cargado el paquete en memoria, podemos aplicar la función específica del paquete ggplot que genera un histograma. La sintaxis es la siguiente (nos la chiva la IA):
+
+```{R}
+# Crear el histograma
+ggplot(nombre_tabla_datos_de_mi_especie, aes(x = Altura)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  ggtitle("Distribución de Alturas de la Especie") +
+  xlab("Altura (metros)") +
+  ylab("Frecuencia")
+```
+
+En este código:
+
+- `aes(x = Altura)`: Define `Altura` como la variable para el eje x.
+- `geom_histogram()`: Crea el histograma.
+- El número de barras del histograma depende de su anchura. Esto se modela con el argumento `binwidth` que representa la anchura de cada banda en las unidades de la variable utilizada. En nuestro caso, si estamos trabajando con tamaños de árboles y estos van de 0 a 20 metros, tendremos que elegir una anchura de banda en función de esos valores de altura. Si ponemos 0.5 m de anchura, estaremos pidiéndole a R que agrupe los datos de la tabla en clases de 0.5 m de altura. Es decir, creará una banda para árboles de 0 a 0.5 m, otra de 0.5 a 1 m, etc. Seguramente para organismos tan grandes tendría más sentido usar un tamaño de 1 o 2 metros. Si, por el contrario estamos trabajando con organismos pequeños, tendremos que usar anchuras de banda más pequeñas. 
+- `fill` y `color`: Colorean las barras y sus bordes.
+- `ggtitle()`, `xlab()`, y `ylab()`: Añaden título y etiquetas a los ejes. 
+
+Cuando tengas tu gráfico, tienes que guardarlo. Para ello puedes usar el siguiente código:
+
+```{R}
+
+ggsave(filename = "distribucion_alturas.jpg", dpi= 300, width = 16, height = 10, units = "cm")
+```
+
+Esto generará un archivo llamado `distribución_alturas.jpg` en tu carpeta de trabajo.
+
 
 
 ---
