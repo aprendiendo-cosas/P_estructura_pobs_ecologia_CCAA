@@ -263,6 +263,8 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
 
 
 
+---
+
 <span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la primera sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
 
 ---
@@ -366,7 +368,13 @@ View(datos)
 
 
 
+
+
+---
+
 <span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas correspondientes a la segunda sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
+
+---
 
 
 
@@ -386,6 +394,14 @@ View(datos)
 
 
 
+
+
+
+---
+
+<span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la primera sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
+
+---
 
 
 
