@@ -490,15 +490,33 @@ Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Est
 
 A modo de ejemplo, interpretaré aquí el histograma mostrado abajo. Simularé que soy uno de vosotros:
 
-![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20081111_Genil.png)
+![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20081111_Genil.png)
+
+El histograma corresponde a una población de trucha común (*Salmo trutta*) en el río Genil, Sierra Nevada. Pasearemos por ese río en nuestra salida de campo. Los datos se tomaron en noviembre del año 2008. Sigamos el método propuesto anteriormente para interpretar este histograma.
+
+- Los hechos: Se observa claramente cómo hay más individuos de la clase 0 (0 a 1 años) que de la clase 1 (1 a 2 años). Y así sucesivamente. Es decir, los individuos jóvenes son mucho más abundantes que los maduros y viejos.
+- Como no conozco muy bien la biología de esta especie, busco en internet o pregunto a una IA. Como datos relevantes obtengo los siguientes:
+  - Las truchas alcanzan su madurez sexual en las clases 2 o 3. Esto me da información importante. Si mi histograma no tuviera ejemplares de estas edades, la conclusión sería clara: al año siguiente no habría ejemplares de la clase 0. 
+  - Es raro encontrar truchas de más de 6 años. De hecho, casi nunca hay ejemplares de las clases 4 o 5.
+- Lo que sí sé (porque lo hemos visto en clase. Concretamente [aquí](https://rawcdn.githack.com/aprendiendo-cosas/Te_poblaciones_ecologia_ccaa/2026-2027/guion_poblaciones_general.html)) es que los peces suelen tener una estructura de edades de tipo III. Esto quiere decir que, en sus poblaciones, abundan mucho los jóvenes y escasean los adultos. Esto se debe a que la vida es dura en un río... Hay multitud de perturbaciones en forma de avenidas, sequías, etc.
+- Solo con lo anterior ya puedo interpretar el histograma:
+
+> El histograma obtenido muestra la distribución de edades típica de una población de peces. Abundan los jóvenes y escasean los adultos. Es una estructura poblacional de tipo III. Todo hace indicar que este histograma corresponde con una población saludable. 
 
 
 
+El ejemplo anterior es facilón. Probemos con este otro histograma:
 
+![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20091110_Genil.png)
 
+Esta gráfica se ha generado en el mismo punto que la anterior pero un año después. Veamos qué podemos aprender al analizarla:
 
+- Los hechos: Se observa claramente cómo la clase 0 es menos abundante que la clase 1. Como hemos aprendido en la anterior interpretación, esto puede ser una anomalía. No sabemos a qué se debe, pero parece claro que la reproducción no ha sido muy eficaz en ese año.
+- Como los datos están tomados en el mismo sitio podemos suponer que los peces que en la primera gráfica estaban en la clase 0, en la segunda gráfica están en la clase 1 que es la más abundante. Esto explica la abundancia de indivudos en la clase 1 de la segunda gráfica.
+- Además, observamos un importante descenso en la transición de la clase 1 del primer histograma a la 2 del segundo. Es decir, los peces que en el primer histograma tenían 1 año han muerto mayoritariamente. No sabemos a qué se debe esta mortalidad, pero parece importante.
+- Con esto podemos interpretar el histograma:
 
-
+> El histograma muestra una distribución de edades ligeramente anómala. Observamos que los individuos jóvenes son más escasos que los que tienen un año. Esto puede indicar que en el año estudiado ha habido un fallo parcial en la reproducción. También observamos una gran mortalidad en la transición de la clase 1 a la 2 entre los dos histogramas.
 
 
 
@@ -506,7 +524,7 @@ A modo de ejemplo, interpretaré aquí el histograma mostrado abajo. Simularé q
 
 ---
 
-<span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la primera sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span>
+<span style="color:green">**Importante: Contesta a [estas](https://script.google.com/macros/s/AKfycbx40ta7IJmMVeXYW7RwXiektBtsGzFAFNYAxcf2Izp5eJpFrMd2FJS-3m9JRXluxxdA1w/exec) preguntas antes de terminar la primera sesión**. Son muy útiles para que el profesor pueda guiar vuestro aprendizaje. </span> **Nota importante: en esta ocasión os pido que, por favor, pongáis en las evidencias los enlaces a las conversaciones que hayáis tenido con IAs para interpretar el histograma. Gracias :)**
 
 ---
 
