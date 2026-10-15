@@ -6,7 +6,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Tres sesiones de 2 horas cada una. Alguna hora más en casa. 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/portada.png)
 
 
 
@@ -43,7 +43,7 @@ La siguiente figura muestra, de manera resumida, los distintos ecosistemas con l
 
 
 
-![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/esquema_gradiente_alturas.png)
+![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/esquema_gradiente_alturas.png)
 
 
 
@@ -71,9 +71,7 @@ Para conseguir lo anterior dividiremos la práctica en tres sesiones diferentes 
 
 La siguiente figura representa cómo se organizará esta práctica
 
-
-
-![gradiente](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/esquema_general.jpg)
+![esquema_general](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/esquema_general.jpg)
 
 
 
@@ -121,7 +119,7 @@ Para entender bien qué es un histograma, podéis ver este de aquí:
 
 
 
-![tabla](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2025_2026/imagenes/rug_plot.png)
+![histograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/rug_plot.png)
 
 
 En él se representan las barras del histograma, pero también los valores concretos de la medida que estamos caracterizando para cada uno de los elementos del grupo. Si estamos representando el tamaño de una serie de árboles, el eje X representa las clases de tamaño (a la izquierda los más bajos) y el eje Y representa cuántos árboles de cada clase hay. Las líneas coloreadas que hay en el eje X representan los valores de las medidas concretas de cada árbol. De esta forma vemos cómo se distribuyen los tamaños en la población. A esta gráfica se le llama "rug plot". El color de cada línea es aleatorio.
@@ -180,7 +178,7 @@ Una vez georreferenciadas las coordenadas de muestreo, el levantamiento en campo
 
 La integración de estas parcelas locales con fuentes masivas normalizadas (tales como el Inventario Forestal Nacional) permite disponer de bases de datos sólidas a partir de las cuales se extraen y curan los subconjuntos de datos tabulares (en formatos estándar como `.csv`) con los que se alimenta el flujo computacional.
 
-[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2025_2026/presentacion/inventarios_forestales.pptx) podéis ver la presentación que usamos para explicar los inventarios forestales. Un buen ejemplo de inventario forestal es el [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html)
+[Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/presentacion/inventarios_forestales.pptx) podéis ver la presentación que usamos para explicar los inventarios forestales. Un buen ejemplo de inventario forestal es el [Inventario Forestal Nacional](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/inventario-forestal-nacional.html)
 
 
 
@@ -207,15 +205,14 @@ Es importante que aprendamos a crear flujos de trabajo porque nos ayudan en el p
 
 En los siguientes enlaces tienes información sobre flujos de trabajo. Recomiendo su lectura:
 
-+ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
-+ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
++ [El papel de los flujos de trabajo en la reproducibilidad de la ciencia.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/biblio/how_to_flow.pdf) Es un texto sencillo que describe la importancia de los flujos de trabajo en la creación de conocimiento científico.
++ [Ejemplos de flujos de trabajo.](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/biblio/workflow_reusable.pdf) Este texto es algo más elabrado y describe distintos tipos de flujos de trabajo. 
 
 En la última práctica de la asignatura veremos con más detalle los flujos de trabajo.
 
 A continuación tienes un dibujo de cómo quedó el flujo de trabajo del GM-2 en esta sesión:
 
-![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/flujograma.jpg)
-
+![flujograma](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/flujograma.jpg)
 
 
 Conforme nos desplazamos hacia la derecha en el flujo de trabajo vamos obteniendo resultados que se parecen más a lo que necesitamos. Pero al mismo tiempo esos resultados son cada vez menos útiles para otros usos. De alguna forma podemos decir que lo que hay a la izquierda del flujo de trabajo es "totipotente" (= podemos hacer muchas cosas con esos datos). Lo de la derecha (nuestros resultados) es una manifestación especializada y particular de esos datos. 
@@ -228,21 +225,21 @@ Conforme nos desplazamos hacia la derecha en el flujo de trabajo vamos obteniend
 
 Terminamos la sesión descargando las tablas de datos que usaremos para generar el histograma. Yo he preparado las tablas necesarias en todos los ecosistemas para los que los necesitamos. Estas tablas son las siguientes:
 
-+ **Pinares de repoblación** ([alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_pinus.zip)): Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
++ **Pinares de repoblación** ([alturas_pinus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/alturas_pinus.zip)): Este archivo contiene los datos altura (en metros) de miles de pinos medidos en Sierra Nevada por el IFN. Esta tabla se usará para los pinares de repoblación. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. Se incluyen valores de varias especies de pino presentes en Sierra Nevada. Los estudiantes de este grupo tendrán que decidir si hacen un histograma agregado para todas las especies o uno para cada especie. 
   + Altura: se muestra la altura en metros del árbol medido.
-+ **Encinares **([alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_encinas.zip)):  Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
++ **Encinares **([alturas_encinas.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/alturas_encinas.zip)):  Este archivo contiene los datos altura (en metros) de miles de encinas medidas en los encinares de Sierra Nevada por el IFN. Esta tabla se usará para los encinares. La tabla contiene los siguientes campos:
   + Especie: indica la especie del individuo cuyo tamaño se indica en el siguiente campo. En todos los casos la especie es *Quercus ilex*.
   + Altura: se muestra la altura en metros del árbol medido.
-+ **Robledales **([Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_robles.zip)): Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
-+ **Enebrales-piornales **([Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/area_enebros.zip)): Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2025_2026/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
++ **Robledales **([Alturas_robles.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/alturas_robles.zip)): Este archivo contiene datos de altura (en metros) de muchos robles de la especie *Quercus pyrenaica* de Sierra Nevada. Estos datos proceden del inventario forestal nacional. Contiene dos campos que se explican solos: la especie y la altura del árbol en metros.
++ **Enebrales-piornales **([Area_enebros.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/area_enebros.zip)): Esta tabla contiene información del tamaño de cientos de enbros medidos en Sierra Nevada. En este caso, el tamaño de los individuos no se mide por su altura, sino por la superficie ocupada por el enebro. Esto se debe a que los enebros son especies que se extienden por el territorio en horizontal. Los datos han sido inferidos (usando ChatGPT) a partir de [este](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/2026_2027/biblio/estructura_edades_enebro.pdf) artículo científico. La tabla tiene los siguientes campos:
   + Especie: en todos los casos la especie es *Juniperus*, que es el género al que pertenece el enebro que vive en las partes altas de Sierra Nevada.
   + Tamaño_m2: se indica en metros cuadrados eel tamaño de los enebros medidos.
 + **Bosques de ribera: **Este año extenderemos parcialmente el estudio de este ecosistema a la componente acuática del mismo. Los estudiantes que lo deseen, podrán analizar los dos tipos de datos siguientes para caracterizar la estructura del ecosistema:
-  + Estructura de la población de árboles del bosque ([Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/Alturas_Populus.zip)): En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
+  + Estructura de la población de árboles del bosque ([Alturas_Populus.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/Alturas_Populus.zip)): En este caso esta tabla contiene información de alturas de árboles del género *Populus*. Son los chopos y álamos tan habituales en los bosques de ribera. Estos datos se usarán para generar el histograma de los bosques de ribera. Tiene los siguientes campos:
     + Especie: en este caso todos los registros tienen el valor de *Populus*.
     + Altura_m: indica la altura en metros de cada árbol.
-  + Estructura de tamaños de las truchas de varios ríos de Sierra Nevada ([datos_trucha_obsnev.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/datos_trucha_obsnev.zip)): Este archivo contiene datos de varios censos de truchas realizados en tres ríos de Sierra Nevada: Genil (que está en la cuenca que visitaremos en la salida de campo), Monachil (que nace justo en la estación de esquí donde dormiremos en la salida) y Trevélez (al sur, en la Alpujarra). [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/estaciones_muestreo_trucha.zip) está el shapefile con la ubicación de estos puntos de muestreo. Todos los datos tienen la misma estructura:
+  + Estructura de tamaños de las truchas de varios ríos de Sierra Nevada ([datos_trucha_obsnev.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/datos_trucha_obsnev.zip)): Este archivo contiene datos de varios censos de truchas realizados en tres ríos de Sierra Nevada: Genil (que está en la cuenca que visitaremos en la salida de campo), Monachil (que nace justo en la estación de esquí donde dormiremos en la salida) y Trevélez (al sur, en la Alpujarra). [Aquí](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/estaciones_muestreo_trucha.zip) está el shapefile con la ubicación de estos puntos de muestreo. Todos los datos tienen la misma estructura:
     + ID visita: código único para cada visita a cada estación de muestreo.
     + Observador/a 1: persona que hace el muestreo
     + Observador/a 2: persona que hace el muestreo
@@ -257,9 +254,9 @@ Terminamos la sesión descargando las tablas de datos que usaremos para generar 
     + Edad: Grupo de edad asignada al pez cuando se mide en campo.
     + Edad asignada: edad asignada al pez tras analizar los datos.
     + Factor de Fulton: indicador que describe el estado de salud de la trucha en cuestión. Se calcula combinando el peso del pez y su tamaño. Si este índice es cercano o superior a 1 se considera que el estado de salud de la trucha es excelente. Valores inferiores indican problemas como falta de alimento, contaminación, etc. Un valor bajo indica que la trucha pesa poco para su tamaño. 
-+ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinalis*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
-+ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
-+ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/heads/main/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
++ **Matorrales de media montaña:** [alturas_romero.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/alturas_romero.zip). Esta tabla contiene información sobre las alturas de ejemplares de *Rosmarinus oficinalis*, una especie típica de los matorrales de media montaña. Tiene un campo con el nombre de la especie y otro con el tamaño de cada individuo en metros. 
++ **Pastizales de alta montaña: **[Tamaños_festuca.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/tamanios_festuca.zip):  Esta tabla, generada artificialmente, se usará para generar el histograma de los pastizales alpinos. Tiene un único campo (tamaño_m) que muestra el tamaño en horizontal de las plantas de la especie *Festuca indigesta*, que es una de las dominantes de los pastizales alpinos de Sierra Nevada.
++ **Borreguiles: **[Diametros_carex_nigra.zip](https://github.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/raw/refs/tags/2026_2027/geoinfo/diametros_carex_nigra.zip): Esta tabla también está generada artificialmente. Se usará para generar el histograma de los borreguiles. La especie *Carex nigra* es una de las más frecuentes en este tipo de formaciones vegetales.
 
 
 
@@ -490,7 +487,8 @@ Una vez que hayamos generado los histogramas, es fundamental interpretarlos. Est
 
 A modo de ejemplo, interpretaré aquí el histograma mostrado abajo. Simularé que soy uno de vosotros:
 
-![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20081111_Genil.png)
+![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/20081111_Genil.png)
+
 
 El histograma corresponde a una población de trucha común (*Salmo trutta*) en el río Genil, Sierra Nevada. Pasearemos por ese río en nuestra salida de campo. Los datos se tomaron en noviembre del año 2008. Sigamos el método propuesto anteriormente para interpretar este histograma.
 
@@ -507,7 +505,7 @@ El histograma corresponde a una población de trucha común (*Salmo trutta*) en 
 
 El ejemplo anterior es facilón. Probemos con este otro histograma:
 
-![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/main/imagenes/20091110_Genil.png)
+![histotrama_trucha_1](https://raw.githubusercontent.com/aprendiendo-cosas/P_estructura_pobs_ecologia_CCAA/refs/tags/2026_2027/imagenes/20091110_Genil.png)
 
 Esta gráfica se ha generado en el mismo punto que la anterior pero un año después. Veamos qué podemos aprender al analizarla:
 
